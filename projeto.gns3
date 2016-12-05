@@ -3,7 +3,6 @@
     "name": "projeto",
     "project_id": "1a924878-44e8-45f7-9a92-1d3eb49d56c6",
     "revision": 4,
-    "show_port_names": true,
     "topology": {
         "links": [
             {
@@ -428,23 +427,9 @@
                 "description": "Link from netX1 port 2 to PC1 port Ethernet0",
                 "destination_node_id": 41,
                 "destination_port_id": 181,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": 82.5,
-                    "y": 29.50000000000003
-                },
                 "id": 31,
                 "source_node_id": 36,
-                "source_port_id": 142,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "2",
-                    "x": -4.5,
-                    "y": 15.999999999999972
-                }
+                "source_port_id": 142
             },
             {
                 "description": "Link from Sintra port FastEthernet0/0 to netS1 port 1",
