@@ -3,6 +3,7 @@
     "name": "projeto",
     "project_id": "1a924878-44e8-45f7-9a92-1d3eb49d56c6",
     "revision": 4,
+    "show_port_names": true,
     "topology": {
         "links": [
             {
@@ -163,145 +164,397 @@
                 "description": "Link from Lisboa port FastEthernet1/1 to Oeiras port FastEthernet0/0",
                 "destination_node_id": 24,
                 "destination_port_id": 87,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 0.9301654487773021,
+                    "y": -1.9066039381841762
+                },
                 "id": 19,
                 "source_node_id": 22,
-                "source_port_id": 74
+                "source_port_id": 74,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/1",
+                    "x": 65.0698345512227,
+                    "y": 45.90660393818418
+                }
             },
             {
                 "description": "Link from Porto port FastEthernet1/0 to EmpC port FastEthernet0/0",
                 "destination_node_id": 27,
                 "destination_port_id": 99,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 0.10124748136902895,
+                    "y": 44.75240828391301
+                },
                 "id": 20,
                 "source_node_id": 21,
-                "source_port_id": 67
+                "source_port_id": 67,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 65.89875251863097,
+                    "y": -0.7524082839130131
+                }
             },
             {
                 "description": "Link from Oeiras port FastEthernet0/1 to EmpA2 port FastEthernet0/0",
                 "destination_node_id": 31,
                 "destination_port_id": 107,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.995267112330339,
+                    "y": 21.384688198271846
+                },
                 "id": 21,
                 "source_node_id": 24,
-                "source_port_id": 88
+                "source_port_id": 88,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.99526711233037,
+                    "y": 22.61531180172817
+                }
             },
             {
                 "description": "Link from Oeiras port FastEthernet1/0 to EmpB2 port FastEthernet0/0",
                 "destination_node_id": 30,
                 "destination_port_id": 105,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -2.9427006394572572,
+                    "y": 39.55341194020005
+                },
                 "id": 22,
                 "source_node_id": 24,
-                "source_port_id": 85
+                "source_port_id": 85,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 68.94270063945729,
+                    "y": 4.446588059799964
+                }
             },
             {
                 "description": "Link from Aveiro port FastEthernet0/1 to EmpB1 port FastEthernet0/0",
                 "destination_node_id": 29,
                 "destination_port_id": 103,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -2.5926985125094575,
+                    "y": 3.7473340961489754
+                },
                 "id": 23,
                 "source_node_id": 23,
-                "source_port_id": 82
+                "source_port_id": 82,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 68.59269851250946,
+                    "y": 40.252665903851025
+                }
             },
             {
                 "description": "Link from Aveiro port FastEthernet1/0 to EmpA1 port FastEthernet0/0",
                 "destination_node_id": 28,
                 "destination_port_id": 101,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -0.7652348804536473,
+                    "y": 43.44548701866654
+                },
                 "id": 24,
                 "source_node_id": 23,
-                "source_port_id": 79
+                "source_port_id": 79,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 66.76523488045365,
+                    "y": 0.5545129813334597
+                }
             },
             {
                 "description": "Link from EmpA1 port FastEthernet0/1 to netA1 port 1",
                 "destination_node_id": 32,
                 "destination_port_id": 109,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -4.489187727873855,
+                    "y": 16.929981109950575
+                },
                 "id": 25,
                 "source_node_id": 28,
-                "source_port_id": 102
+                "source_port_id": 102,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.98918772787385,
+                    "y": 21.070018890049425
+                }
             },
             {
                 "description": "Link from EmpB1 port FastEthernet0/1 to netB1 port 1",
                 "destination_node_id": 33,
                 "destination_port_id": 117,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -4.497165834126918,
+                    "y": 16.476156736120565
+                },
                 "id": 26,
                 "source_node_id": 29,
-                "source_port_id": 104
+                "source_port_id": 104,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.99716583412692,
+                    "y": 21.523843263879435
+                }
             },
             {
                 "description": "Link from EmpB2 port FastEthernet0/1 to netB2 port 1",
                 "destination_node_id": 34,
                 "destination_port_id": 125,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -4.5,
+                    "y": 16.0
+                },
                 "id": 27,
                 "source_node_id": 30,
-                "source_port_id": 106
+                "source_port_id": 106,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 73.0,
+                    "y": 22.0
+                }
             },
             {
                 "description": "Link from EmpA2 port FastEthernet0/1 to netA2 port 1",
                 "destination_node_id": 35,
                 "destination_port_id": 133,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -4.488931931166121,
+                    "y": 15.059083954560776
+                },
                 "id": 28,
                 "source_node_id": 31,
-                "source_port_id": 108
+                "source_port_id": 108,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.98893193116612,
+                    "y": 22.940916045439224
+                }
             },
             {
                 "description": "Link from EmpC port FastEthernet0/1 to netC port 1",
                 "destination_node_id": 44,
                 "destination_port_id": 184,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -4.5,
+                    "y": 16.0
+                },
                 "id": 29,
                 "source_node_id": 27,
-                "source_port_id": 100
+                "source_port_id": 100,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 73.0,
+                    "y": 22.0
+                }
             },
             {
                 "description": "Link from Lisboa port FastEthernet2/0 to netX1 port 1",
                 "destination_node_id": 36,
                 "destination_port_id": 141,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 36.00628855405585,
+                    "y": -23.996795770411808
+                },
                 "id": 30,
                 "source_node_id": 22,
-                "source_port_id": 71
+                "source_port_id": 71,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f2/0",
+                    "x": 32.49371144594415,
+                    "y": 61.99679577041181
+                }
             },
             {
                 "description": "Link from netX1 port 2 to PC1 port Ethernet0",
                 "destination_node_id": 41,
                 "destination_port_id": 181,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 82.5,
+                    "y": 29.50000000000003
+                },
                 "id": 31,
                 "source_node_id": 36,
-                "source_port_id": 142
+                "source_port_id": 142,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": -4.5,
+                    "y": 15.999999999999972
+                }
             },
             {
                 "description": "Link from Sintra port FastEthernet0/0 to netS1 port 1",
                 "destination_node_id": 39,
                 "destination_port_id": 165,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 75.49075358286308,
+                    "y": 15.139983793916926
+                },
                 "id": 32,
                 "source_node_id": 20,
-                "source_port_id": 63
+                "source_port_id": 63,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.99075358286305,
+                    "y": 22.860016206083074
+                }
             },
             {
                 "description": "Link from netS1 port 2 to PC2 port Ethernet0",
                 "destination_node_id": 42,
                 "destination_port_id": 182,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 82.48818944119586,
+                    "y": 28.413300229539225
+                },
                 "id": 33,
                 "source_node_id": 39,
-                "source_port_id": 166
+                "source_port_id": 166,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": -4.490551552956674,
+                    "y": 16.869359816368622
+                }
             },
             {
                 "description": "Link from London port FastEthernet0/0 to netL1 port 1",
                 "destination_node_id": 38,
                 "destination_port_id": 157,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 75.49639704557006,
+                    "y": 15.463135610126585
+                },
                 "id": 34,
                 "source_node_id": 19,
-                "source_port_id": 57
+                "source_port_id": 57,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.996397045570063,
+                    "y": 22.536864389873415
+                }
             },
             {
                 "description": "Link from London port FastEthernet0/1 to netL2 port 1",
                 "destination_node_id": 37,
                 "destination_port_id": 149,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 71.78752937643264,
+                    "y": 32.82899913109921
+                },
                 "id": 35,
                 "source_node_id": 19,
-                "source_port_id": 58
+                "source_port_id": 58,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -3.2875293764326443,
+                    "y": 5.171000868900791
+                }
             },
             {
                 "description": "Link from London port FastEthernet2/1 to Internet Core port 1",
                 "destination_node_id": 40,
                 "destination_port_id": 173,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 35.5,
+                    "y": 56.0
+                },
                 "id": 36,
                 "source_node_id": 19,
-                "source_port_id": 54
+                "source_port_id": 54,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f2/1",
+                    "x": 33.0,
+                    "y": -18.0
+                }
             }
         ],
         "nodes": [
@@ -514,7 +767,8 @@
                 "type": "C7200",
                 "vm_id": "f36cfd37-d86e-47ff-a90d-86c6a8dd1830",
                 "x": -221.0904037956216,
-                "y": -0.7867965644035735
+                "y": -0.7867965644035735,
+                "z": 0.0
             },
             {
                 "description": "Router c7200",
@@ -1070,8 +1324,8 @@
                 "server_id": 1,
                 "type": "C3725",
                 "vm_id": "1d52e6ec-d23e-438f-9957-d601fa947de1",
-                "x": 173.47518010647187,
-                "y": -248.2741699796952
+                "x": 140.94826817189067,
+                "y": -251.1025971044414
             },
             {
                 "description": "Router c3725",
@@ -1717,8 +1971,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": 22.48275605729689,
-                "y": 118.35028842544406
+                "x": 26.725396744416173,
+                "y": 115.5218613006979
             },
             {
                 "description": "Ethernet switch",
@@ -1877,8 +2131,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -434.30822458921284,
-                "y": -136.20815280171308
+                "x": -438.55086527633205,
+                "y": -139.03657992645924
             },
             {
                 "description": "Ethernet switch",
@@ -1960,7 +2214,7 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -355.11226509631933,
+                "x": -340.9701294725884,
                 "y": 8.041630560342611
             },
             {
@@ -2040,8 +2294,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -223.59040379562163,
-                "y": -263.48737341529176
+                "x": -223.5904037956216,
+                "y": -332.7838379715734
             },
             {
                 "description": "VPCS device",
@@ -2073,8 +2327,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "type": "VPCSDevice",
                 "vm_id": "6fdc3692-cb61-4e5f-9849-00c6d50ce8e2",
-                "x": -89.06854249492382,
-                "y": 104.85028842544398
+                "x": 90.53657992645924,
+                "y": 174.1467529817256
             },
             {
                 "description": "VPCS device",
@@ -2106,8 +2360,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "type": "VPCSDevice",
                 "vm_id": "bcdf11e9-9e8a-4615-b4cb-f52efd103aa8",
-                "x": -482.2199128346442,
-                "y": -2.6299423149112044
+                "x": -452.52142802480927,
+                "y": -1.2157287525381086
             },
             {
                 "description": "Ethernet switch",
@@ -2186,8 +2440,68 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": 288.35490578343865,
-                "y": -242.27416997969522
+                "x": 264.313275223096,
+                "y": -247.93102422918759
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "AS20000\nISP L",
+                "x": -287.0853531617383,
+                "y": -245.34523779156066
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "AS300000\nISP S",
+                "x": -370.5239533417509,
+                "y": -54.426406871192846
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "AS65300",
+                "x": 209.30360723121805,
+                "y": -296.25692603699207
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "AS90000\nISP X",
+                "x": 462.44783489600206,
+                "y": -303.32799384885755
+            }
+        ],
+        "rectangles": [
+            {
+                "height": 540.2295808265224,
+                "width": 534.5727265770295,
+                "x": 25.45584412271569,
+                "y": -304.0559159102155,
+                "z": -1.0
+            },
+            {
+                "height": 120.20815280171307,
+                "width": 270.1147904132611,
+                "x": -458.20519420888274,
+                "y": -52.32590180780451,
+                "z": -2.0
+            },
+            {
+                "height": 158.39191898578665,
+                "width": 268.700576850888,
+                "x": -458.20519420888274,
+                "y": -260.2152954766495,
+                "z": -1.0
+            },
+            {
+                "height": 91.92388155425115,
+                "width": 189.50461735799473,
+                "x": 156.9777054234135,
+                "y": -296.9848480983499,
+                "z": -1.0
             }
         ],
         "servers": [
