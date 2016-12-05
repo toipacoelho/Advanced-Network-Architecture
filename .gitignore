@@ -1,0 +1,4 @@
+*
+!*.gns3
+!.gitignore
+!./project-files/dynamips/configs
