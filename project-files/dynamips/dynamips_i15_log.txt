@@ -1,0 +1,13 @@
+Jan 02 04:04:20.544 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 04:04:20.544 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14143.
+Jan 02 04:04:20.778 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 04:04:20.822 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 04:04:20.823 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 04:04:20.848 HYPERVISOR: exec_cmd: ethsw create netB2 
+Jan 02 04:04:23.274 HYPERVISOR: exec_cmd: nio create_udp udp-ae5e7291-0e84-4551-bfa4-035eb6365a04 10029 127.0.0.1 10028 
+Jan 02 04:04:23.324 HYPERVISOR: exec_cmd: ethsw add_nio netB2 udp-ae5e7291-0e84-4551-bfa4-035eb6365a04 
+Jan 02 04:04:23.368 HYPERVISOR: exec_cmd: ethsw set_access_port netB2 udp-ae5e7291-0e84-4551-bfa4-035eb6365a04 1 
+Jan 02 05:18:05.170 HYPERVISOR: exec_cmd: ethsw delete netB2 
+Jan 02 05:18:05.247 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 02 05:18:05.547 HYPERVISOR: Stopped.
+Jan 02 05:18:05.547 GENERAL: reset done.

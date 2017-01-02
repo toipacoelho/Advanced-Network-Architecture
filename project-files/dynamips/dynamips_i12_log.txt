@@ -1,0 +1,52 @@
+Jan 02 04:04:20.215 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 04:04:20.216 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14137.
+Jan 02 04:04:20.442 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 04:04:20.487 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 04:04:20.487 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 04:04:20.527 HYPERVISOR: exec_cmd: vm create EmpA2 30 c3725 
+Jan 02 04:04:20.529 VM: VM EmpA2 created.
+Jan 02 04:04:20.561 HYPERVISOR: exec_cmd: vm set_con_tcp_port EmpA2 5010 
+Jan 02 04:04:20.603 HYPERVISOR: exec_cmd: c3725 get_mac_addr EmpA2 
+Jan 02 04:04:20.659 HYPERVISOR: exec_cmd: vm set_exec_area EmpA2 64 
+Jan 02 04:04:20.688 HYPERVISOR: exec_cmd: c3725 set_mac_addr EmpA2 c21e.1098.0000 
+Jan 02 04:04:20.749 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 04:04:20.771 HYPERVISOR: exec_cmd: vm set_idle_pc EmpA2 0x60a68e70 
+Jan 02 04:04:20.797 HYPERVISOR: exec_cmd: vm set_nvram EmpA2 256 
+Jan 02 04:04:20.836 HYPERVISOR: exec_cmd: vm set_disk0 EmpA2 0 
+Jan 02 04:04:20.863 HYPERVISOR: exec_cmd: vm set_ios EmpA2 C:/Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.bin 
+Jan 02 04:04:20.905 HYPERVISOR: exec_cmd: vm set_config EmpA2 configs/i30_startup-config.cfg 
+Jan 02 04:04:23.320 HYPERVISOR: exec_cmd: nio create_udp udp-62eb0dcd-d53e-4ed3-b389-672c6c69fb9a 10031 127.0.0.1 10030 
+Jan 02 04:04:23.363 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpA2 0 0 udp-62eb0dcd-d53e-4ed3-b389-672c6c69fb9a 
+Jan 02 04:04:23.406 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 04:04:23.463 HYPERVISOR: exec_cmd: nio create_udp udp-ce8cdf93-d1a7-4171-9f9c-1716941a29b3 10032 127.0.0.1 10033 
+Jan 02 04:04:23.511 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpA2 0 1 udp-ce8cdf93-d1a7-4171-9f9c-1716941a29b3 
+Jan 02 04:04:23.553 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 04:21:04.375 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 02 04:21:04.377 VM: VM Ghost created.
+Jan 02 04:21:04.410 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.bin 
+Jan 02 04:21:04.434 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 02 04:21:04.444 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-advipservicesk9-mz.124-21.bin-128.ghost 
+Jan 02 04:21:04.451 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 02 04:21:04.459 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 02 04:21:04.793 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 02 04:21:04.806 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 02 04:21:04.947 VM: VM Ghost shutdown.
+Jan 02 04:21:04.957 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 02 04:21:04.957 VM: VM Ghost destroyed.
+Jan 02 04:21:05.003 HYPERVISOR: exec_cmd: vm set_ghost_status EmpA2 2 
+Jan 02 04:21:05.010 HYPERVISOR: exec_cmd: vm set_ghost_file EmpA2 c3725-advipservicesk9-mz.124-21.bin-128.ghost 
+Jan 02 04:21:05.018 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 04:21:05.031 HYPERVISOR: exec_cmd: vm start EmpA2 
+Jan 02 04:38:03.094 HYPERVISOR: exec_cmd: vm extract_config EmpA2 
+Jan 02 05:17:50.881 HYPERVISOR: exec_cmd: vm extract_config EmpA2 
+Jan 02 05:18:02.785 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 05:18:02.810 HYPERVISOR: exec_cmd: vm stop EmpA2 
+Jan 02 05:18:02.935 VM: VM EmpA2 shutdown.
+Jan 02 05:18:02.977 HYPERVISOR: exec_cmd: vm extract_config EmpA2 
+Jan 02 05:18:05.946 HYPERVISOR: exec_cmd: vm get_status EmpA2 
+Jan 02 05:18:06.022 HYPERVISOR: exec_cmd: vm extract_config EmpA2 
+Jan 02 05:18:06.114 HYPERVISOR: exec_cmd: vm delete EmpA2 
+Jan 02 05:18:06.114 VM: VM EmpA2 destroyed.
+Jan 02 05:18:06.225 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 02 05:18:06.235 HYPERVISOR: Stopped.
+Jan 02 05:18:06.236 GENERAL: reset done.

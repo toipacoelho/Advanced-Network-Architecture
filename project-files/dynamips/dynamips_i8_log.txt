@@ -1,0 +1,40 @@
+Jan 02 04:04:19.473 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 04:04:19.473 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14127.
+Jan 02 04:04:19.670 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 04:04:19.705 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 04:04:19.705 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 04:04:19.735 HYPERVISOR: exec_cmd: vm create EmpC 26 c3725 
+Jan 02 04:04:19.736 VM: VM EmpC created.
+Jan 02 04:04:19.772 HYPERVISOR: exec_cmd: vm set_con_tcp_port EmpC 5006 
+Jan 02 04:04:19.803 HYPERVISOR: exec_cmd: c3725 get_mac_addr EmpC 
+Jan 02 04:04:19.853 HYPERVISOR: exec_cmd: vm set_exec_area EmpC 64 
+Jan 02 04:04:19.885 HYPERVISOR: exec_cmd: c3725 set_mac_addr EmpC c21a.0588.0000 
+Jan 02 04:04:19.923 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 04:04:19.956 HYPERVISOR: exec_cmd: vm set_idle_pc EmpC 0x60a68e70 
+Jan 02 04:04:19.986 HYPERVISOR: exec_cmd: vm set_nvram EmpC 256 
+Jan 02 04:04:20.022 HYPERVISOR: exec_cmd: vm set_disk0 EmpC 0 
+Jan 02 04:04:20.056 HYPERVISOR: exec_cmd: vm set_ios EmpC C:/Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.bin 
+Jan 02 04:04:20.092 HYPERVISOR: exec_cmd: vm set_config EmpC configs/i26_startup-config.cfg 
+Jan 02 04:04:22.636 HYPERVISOR: exec_cmd: nio create_udp udp-759263ec-e555-4e6d-8f7d-bf10b6f6069c 10015 127.0.0.1 10014 
+Jan 02 04:04:22.680 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 0 udp-759263ec-e555-4e6d-8f7d-bf10b6f6069c 
+Jan 02 04:04:22.706 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 04:04:24.006 HYPERVISOR: exec_cmd: nio create_udp udp-5d53ed58-96ae-452e-86c2-ff4e8346b91d 10048 127.0.0.1 10049 
+Jan 02 04:04:24.049 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 1 udp-5d53ed58-96ae-452e-86c2-ff4e8346b91d 
+Jan 02 04:04:24.089 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 04:21:05.111 HYPERVISOR: exec_cmd: vm set_ghost_status EmpC 2 
+Jan 02 04:21:05.125 HYPERVISOR: exec_cmd: vm set_ghost_file EmpC c3725-advipservicesk9-mz.124-21.bin-128.ghost 
+Jan 02 04:21:05.133 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 04:21:05.140 HYPERVISOR: exec_cmd: vm start EmpC 
+Jan 02 04:38:03.037 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 02 05:17:50.834 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 02 05:18:02.972 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 05:18:03.017 HYPERVISOR: exec_cmd: vm stop EmpC 
+Jan 02 05:18:03.129 VM: VM EmpC shutdown.
+Jan 02 05:18:03.145 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 02 05:18:05.968 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 05:18:06.042 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 02 05:18:06.150 HYPERVISOR: exec_cmd: vm delete EmpC 
+Jan 02 05:18:06.150 VM: VM EmpC destroyed.
+Jan 02 05:18:06.247 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 02 05:18:06.318 HYPERVISOR: Stopped.
+Jan 02 05:18:06.318 GENERAL: reset done.

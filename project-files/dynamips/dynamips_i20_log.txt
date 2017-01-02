@@ -1,0 +1,16 @@
+Jan 02 04:04:21.029 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 04:04:21.030 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14152.
+Jan 02 04:04:21.242 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 04:04:21.285 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 04:04:21.285 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 04:04:21.327 HYPERVISOR: exec_cmd: ethsw create netS1 
+Jan 02 04:04:23.805 HYPERVISOR: exec_cmd: nio create_udp udp-c1eb3cac-07f9-4e20-9911-d2d6cb4c36b4 10043 127.0.0.1 10042 
+Jan 02 04:04:23.843 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-c1eb3cac-07f9-4e20-9911-d2d6cb4c36b4 
+Jan 02 04:04:23.890 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-c1eb3cac-07f9-4e20-9911-d2d6cb4c36b4 1 
+Jan 02 04:04:23.963 HYPERVISOR: exec_cmd: nio create_udp udp-424be619-461d-435a-9ade-2d5444aa9457 10044 127.0.0.1 10045 
+Jan 02 04:04:24.023 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-424be619-461d-435a-9ade-2d5444aa9457 
+Jan 02 04:04:24.064 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-424be619-461d-435a-9ade-2d5444aa9457 1 
+Jan 02 05:18:05.144 HYPERVISOR: exec_cmd: ethsw delete netS1 
+Jan 02 05:18:05.222 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 02 05:18:05.454 HYPERVISOR: Stopped.
+Jan 02 05:18:05.455 GENERAL: reset done.

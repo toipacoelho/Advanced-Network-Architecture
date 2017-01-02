@@ -1,0 +1,54 @@
+Jan 02 04:04:18.010 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 04:04:18.011 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14110.
+Jan 02 04:04:18.431 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 04:04:18.478 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 04:04:18.484 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 04:04:18.496 HYPERVISOR: exec_cmd: vm create Porto 21 c7200 
+Jan 02 04:04:18.498 VM: VM Porto created.
+Jan 02 04:04:18.529 HYPERVISOR: exec_cmd: vm set_con_tcp_port Porto 5002 
+Jan 02 04:04:18.553 HYPERVISOR: exec_cmd: c7200 get_mac_addr Porto 
+Jan 02 04:04:18.585 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:18.621 HYPERVISOR: exec_cmd: vm slot_add_binding Porto 0 0 C7200-IO-FE 
+Jan 02 04:04:18.657 HYPERVISOR: exec_cmd: vm set_exec_area Porto 64 
+Jan 02 04:04:18.691 HYPERVISOR: exec_cmd: c7200 set_mac_addr Porto ca15.1c64.0000 
+Jan 02 04:04:18.725 HYPERVISOR: exec_cmd: vm set_ram Porto 512 
+Jan 02 04:04:18.760 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:18.795 HYPERVISOR: exec_cmd: vm set_idle_pc Porto 0x6318687c 
+Jan 02 04:04:18.829 HYPERVISOR: exec_cmd: vm set_nvram Porto 512 
+Jan 02 04:04:18.864 HYPERVISOR: exec_cmd: vm set_disk0 Porto 0 
+Jan 02 04:04:18.899 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:18.934 HYPERVISOR: exec_cmd: vm slot_remove_binding Porto 0 0 
+Jan 02 04:04:18.968 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:19.003 HYPERVISOR: exec_cmd: vm slot_add_binding Porto 0 0 C7200-IO-2FE 
+Jan 02 04:04:19.037 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:19.073 HYPERVISOR: exec_cmd: vm slot_add_binding Porto 2 0 PA-2FE-TX 
+Jan 02 04:04:19.110 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:19.146 HYPERVISOR: exec_cmd: vm slot_add_binding Porto 1 0 PA-2FE-TX 
+Jan 02 04:04:19.180 HYPERVISOR: exec_cmd: vm set_ios Porto C:/Users/Filipe/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 02 04:04:19.215 HYPERVISOR: exec_cmd: vm set_config Porto configs/i21_startup-config.cfg 
+Jan 02 04:04:21.934 HYPERVISOR: exec_cmd: nio create_udp udp-30129794-4740-428c-8b00-9c7f60cc583f 10001 127.0.0.1 10000 
+Jan 02 04:04:21.977 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Porto 0 0 udp-30129794-4740-428c-8b00-9c7f60cc583f 
+Jan 02 04:04:22.016 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:22.514 HYPERVISOR: exec_cmd: nio create_udp udp-69bdeda0-ef37-407f-9594-a81502073b54 10012 127.0.0.1 10013 
+Jan 02 04:04:22.548 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Porto 0 1 udp-69bdeda0-ef37-407f-9594-a81502073b54 
+Jan 02 04:04:22.575 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:04:22.624 HYPERVISOR: exec_cmd: nio create_udp udp-69eaa712-c24d-44fd-bcef-b6a9643f88a4 10014 127.0.0.1 10015 
+Jan 02 04:04:22.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Porto 1 0 udp-69eaa712-c24d-44fd-bcef-b6a9643f88a4 
+Jan 02 04:04:22.702 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:21:05.701 HYPERVISOR: exec_cmd: vm set_ghost_status Porto 2 
+Jan 02 04:21:05.729 HYPERVISOR: exec_cmd: vm set_ghost_file Porto c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 02 04:21:05.747 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 04:21:05.775 HYPERVISOR: exec_cmd: vm start Porto 
+Jan 02 04:38:03.074 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 02 05:17:50.861 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 02 05:18:03.140 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 05:18:03.166 HYPERVISOR: exec_cmd: vm stop Porto 
+Jan 02 05:18:03.327 VM: VM Porto shutdown.
+Jan 02 05:18:03.355 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 02 05:18:05.971 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 02 05:18:06.046 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 02 05:18:06.158 HYPERVISOR: exec_cmd: vm delete Porto 
+Jan 02 05:18:06.158 VM: VM Porto destroyed.
+Jan 02 05:18:06.251 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 02 05:18:06.736 HYPERVISOR: Stopped.
+Jan 02 05:18:06.736 GENERAL: reset done.
