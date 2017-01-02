@@ -153,6 +153,22 @@ no shut
 ip add 4.20.20.14 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:4::2/64
+ipv6 ospf 1 area 0
+no shut exit
+router ospf 1
+default-information originate always
+network 140.1.1.0 0.0.0.255
+area 0
+redistribute bgp 65300 subnets
+ipv6 router ospf 1
+default-information originate always
+exit
+router bgp 65300
+network 140.1.1.0 mask 255.255.255.0
+address-family ipv6 unicast
+network 2001:140:0:1::/64
+neighbor 2001:420:0:4::1 remote-as 9000
+redistribute ospf 1
 
 
 
