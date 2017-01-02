@@ -164,6 +164,8 @@
                 "description": "Link from Porto port FastEthernet1/0 to EmpC port FastEthernet0/0",
                 "destination_node_id": 27,
                 "destination_port_id": 99,
+<<<<<<< HEAD
+=======
                 "destination_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
@@ -180,6 +182,35 @@
                     "text": "f1/0",
                     "x": 65.89875251863097,
                     "y": -0.7524082839130131
+                }
+            },
+            {
+                "description": "Link from Aveiro port FastEthernet0/1 to EmpB1 port FastEthernet0/0",
+                "destination_node_id": 29,
+                "destination_port_id": 103,
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -2.5926985125094575,
+                    "y": 3.7473340961489754
+                },
+<<<<<<< HEAD
+                "id": 8,
+                "source_node_id": 21,
+                "source_port_id": 67,
+=======
+                "id": 9,
+                "source_node_id": 23,
+                "source_port_id": 82,
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 68.59269851250946,
+                    "y": 40.252665903851025
                 }
             },
             {
@@ -205,25 +236,31 @@
                 }
             },
             {
-                "description": "Link from Aveiro port FastEthernet0/1 to EmpB1 port FastEthernet0/0",
-                "destination_node_id": 29,
-                "destination_port_id": 103,
+                "description": "Link from Lisboa port FastEthernet1/1 to Oeiras port FastEthernet0/0",
+                "destination_node_id": 24,
+                "destination_port_id": 87,
                 "destination_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "f0/0",
-                    "x": -2.5926985125094575,
-                    "y": 3.7473340961489754
+                    "x": 0.9301654487773021,
+                    "y": -1.9066039381841762
                 },
+<<<<<<< HEAD
                 "id": 10,
                 "source_node_id": 23,
                 "source_port_id": 82,
+=======
+                "id": 11,
+                "source_node_id": 22,
+                "source_port_id": 74,
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                 "source_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": 68.59269851250946,
-                    "y": 40.252665903851025
+                    "text": "f1/1",
+                    "x": 65.0698345512227,
+                    "y": 45.90660393818418
                 }
             },
             {
@@ -249,6 +286,7 @@
                 }
             },
             {
+<<<<<<< HEAD
                 "description": "Link from Oeiras port FastEthernet1/0 to EmpB2 port FastEthernet0/0",
                 "destination_node_id": 30,
                 "destination_port_id": 105,
@@ -271,6 +309,8 @@
                 }
             },
             {
+=======
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                 "description": "Link from EmpA1 port FastEthernet0/1 to netA1 port 1",
                 "destination_node_id": 32,
                 "destination_port_id": 109,
@@ -420,8 +460,8 @@
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "f0/1",
-                    "x": -3.2875293764326443,
-                    "y": 5.171000868900791
+                    "x": -2.2875293764326443,
+                    "y": 4.171000868900791
                 }
             },
             {
@@ -589,6 +629,24 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "description": "connected to netL1 on port 1",
+                        "id": 57,
+                        "link_id": 21,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to netL2 on port 1",
+                        "id": 58,
+                        "link_id": 19,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
                         "adapter_number": 2,
                         "description": "connected to Lisboa on port FastEthernet1/0",
                         "id": 53,
@@ -605,6 +663,7 @@
                         "name": "FastEthernet2/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
+<<<<<<< HEAD
                     },
                     {
                         "adapter_number": 1,
@@ -623,6 +682,8 @@
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
+=======
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                     }
                 ],
                 "properties": {
@@ -696,6 +757,7 @@
                         "port_number": 1
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 2,
                         "id": 59,
                         "name": "FastEthernet2/0",
@@ -713,6 +775,13 @@
                         "id": 61,
                         "link_id": 4,
                         "name": "FastEthernet1/0",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to netS1 on port 1",
+                        "id": 63,
+                        "link_id": 22,
+                        "name": "FastEthernet0/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -723,6 +792,18 @@
                         "link_id": 3,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 59,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 60,
+                        "name": "FastEthernet2/1",
                         "port_number": 1
                     }
                 ],
@@ -783,11 +864,19 @@
                 },
                 "ports": [
                     {
+<<<<<<< HEAD
                         "adapter_number": 0,
                         "description": "connected to London on port FastEthernet1/0",
                         "id": 69,
                         "link_id": 2,
                         "name": "FastEthernet0/0",
+=======
+                        "adapter_number": 1,
+                        "description": "connected to EmpC on port FastEthernet0/0",
+                        "id": 67,
+                        "link_id": 8,
+                        "name": "FastEthernet1/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -801,6 +890,7 @@
                         "port_number": 1
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 2,
                         "id": 65,
                         "name": "FastEthernet2/0",
@@ -818,6 +908,13 @@
                         "id": 67,
                         "link_id": 8,
                         "name": "FastEthernet1/0",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to London on port FastEthernet1/0",
+                        "id": 69,
+                        "link_id": 2,
+                        "name": "FastEthernet0/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -825,6 +922,18 @@
                         "adapter_number": 1,
                         "id": 68,
                         "name": "FastEthernet1/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 65,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 66,
+                        "name": "FastEthernet2/1",
                         "port_number": 1
                     }
                 ],
@@ -893,15 +1002,24 @@
                         "port_number": 0
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 0,
                         "description": "connected to Ethernet Core on port 1",
                         "id": 76,
                         "link_id": 5,
                         "name": "FastEthernet0/1",
+=======
+                        "adapter_number": 1,
+                        "description": "connected to Oeiras on port FastEthernet0/0",
+                        "id": 74,
+                        "link_id": 11,
+                        "name": "FastEthernet1/1",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 1
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 2,
                         "description": "connected to netX1 on port 1",
                         "id": 71,
@@ -922,6 +1040,13 @@
                         "id": 73,
                         "link_id": 1,
                         "name": "FastEthernet1/0",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to Sintra on port FastEthernet1/0",
+                        "id": 75,
+                        "link_id": 4,
+                        "name": "FastEthernet0/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -932,6 +1057,21 @@
                         "link_id": 11,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to netX1 on port 1",
+                        "id": 71,
+                        "link_id": 18,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 72,
+                        "name": "FastEthernet2/1",
                         "port_number": 1
                     }
                 ],
@@ -1009,6 +1149,7 @@
                         "port_number": 1
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 2,
                         "id": 77,
                         "name": "FastEthernet2/0",
@@ -1026,13 +1167,41 @@
                         "id": 79,
                         "link_id": 9,
                         "name": "FastEthernet1/0",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to Ethernet Core on port 2",
+                        "id": 81,
+                        "link_id": 6,
+                        "name": "FastEthernet0/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 1,
                         "id": 80,
                         "name": "FastEthernet1/1",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to EmpB1 on port FastEthernet0/0",
+                        "id": 82,
+                        "link_id": 9,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 77,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 78,
+                        "name": "FastEthernet2/1",
                         "port_number": 1
                     }
                 ],
@@ -1110,6 +1279,7 @@
                         "port_number": 1
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 2,
                         "id": 83,
                         "name": "FastEthernet2/0",
@@ -1127,13 +1297,41 @@
                         "id": 85,
                         "link_id": 12,
                         "name": "FastEthernet1/0",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to Lisboa on port FastEthernet1/1",
+                        "id": 87,
+                        "link_id": 11,
+                        "name": "FastEthernet0/0",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
+<<<<<<< HEAD
                         "adapter_number": 1,
                         "id": 86,
                         "name": "FastEthernet1/1",
+=======
+                        "adapter_number": 0,
+                        "description": "connected to EmpA2 on port FastEthernet0/0",
+                        "id": 88,
+                        "link_id": 16,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 83,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 84,
+                        "name": "FastEthernet2/1",
                         "port_number": 1
                     }
                 ],
@@ -1404,7 +1602,11 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro on port FastEthernet0/1",
                         "id": 103,
+<<<<<<< HEAD
                         "link_id": 10,
+=======
+                        "link_id": 9,
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1568,8 +1770,8 @@
                 "server_id": 1,
                 "type": "C3725",
                 "vm_id": "08a8d2ca-e77c-4a9a-9edc-99e7a73690fb",
-                "x": 364.39401102683973,
-                "y": 116.59292911256333
+                "x": 359.39401102683973,
+                "y": 137.5929291125633
             },
             {
                 "description": "Ethernet switch",
@@ -1889,7 +2091,7 @@
                 "server_id": 1,
                 "type": "EthernetSwitch",
                 "x": 480.68795026617977,
-                "y": 122.59292911256333
+                "y": 139.5929291125633
             },
             {
                 "description": "Ethernet switch",
@@ -2131,8 +2333,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -438.55086527633205,
-                "y": -139.03657992645924
+                "x": -436.55086527633205,
+                "y": -143.03657992645924
             },
             {
                 "description": "Ethernet switch",
@@ -2320,8 +2522,7 @@
                 ],
                 "properties": {
                     "console": 5011,
-                    "name": "PC1",
-                    "startup_script_path": "startup.vpc"
+                    "name": "PC1"
                 },
                 "server_id": 1,
                 "symbol": ":/symbols/vpcs_guest.svg",
@@ -2353,8 +2554,7 @@
                 ],
                 "properties": {
                     "console": 5012,
-                    "name": "PC2",
-                    "startup_script_path": "startup.vpc"
+                    "name": "PC2"
                 },
                 "server_id": 1,
                 "symbol": ":/symbols/vpcs_guest.svg",
@@ -2463,8 +2663,8 @@
                 "color": "#ff000000",
                 "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                 "text": "AS65300",
-                "x": 209.30360723121805,
-                "y": -296.25692603699207
+                "x": 207.30360723121805,
+                "y": -312.2569260369921
             },
             {
                 "color": "#ff000000",
@@ -2472,14 +2672,87 @@
                 "text": "AS90000\nISP X",
                 "x": 462.44783489600206,
                 "y": -303.32799384885755
+<<<<<<< HEAD
+=======
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.0/24\n2001:200 ::1/64",
+                "x": 26.870057685088824,
+                "y": -242.51681066681445
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "197.172.1.0/24\n2001:200 ::2/64",
+                "x": 148.49242404917499,
+                "y": -31.798989873223306
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "4.20.20.0/28\n2001:420 ::/60",
+                "x": -110.30865786510141,
+                "y": -167.5634918610405
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "4.20.20.16/28\n2001:420::2::/60",
+                "x": -113.1370849898476,
+                "y": 38.91168824543142
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "4.20.20.1/28\n2001.420::1::/60",
+                "x": -113.13708498984761,
+                "y": -85.53910524340094
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.3.0/24\n2001:200 ::3/64",
+                "x": 144.2497833620557,
+                "y": 54.468037431535464
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.4.0/24\n2001:200::4/64",
+                "x": -93.33809511662426,
+                "y": 123.76450198781708
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "200.200.1.0/24\n2100:200:200::/48",
+                "x": -602.4549775709386,
+                "y": -236.85995641732208
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "200.100.1.0/24\n2100:200:100::/48",
+                "x": -601.0407640085652,
+                "y": -149.17871555019022
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "210.0.1.0/24\n2100:210::/48",
+                "x": -574.1707063234766,
+                "y": 6.384776310850235
+>>>>>>> 27637ca0c28c0925f8dc85f7d58b1d6a7c52bc86
             }
         ],
         "rectangles": [
             {
-                "height": 540.2295808265224,
-                "width": 534.5727265770295,
-                "x": 25.45584412271569,
-                "y": -301.2274887854693,
+                "height": 562.2274887854693,
+                "width": 576.0,
+                "x": -19.0,
+                "y": -340.2274887854693,
                 "z": -1.0
             },
             {
@@ -2497,10 +2770,10 @@
                 "z": -1.0
             },
             {
-                "height": 91.92388155425115,
-                "width": 189.50461735799473,
-                "x": 156.9777054234135,
-                "y": -296.9848480983499,
+                "height": 108.0,
+                "width": 210.48232278140824,
+                "x": 137.0,
+                "y": -310.0,
                 "z": -1.0
             }
         ],
