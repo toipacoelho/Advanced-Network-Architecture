@@ -57,17 +57,36 @@ no shut
 ip add 4.20.20.2 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:0::2/64
-int f0/1
-no shut
-ip add 192.172.1.1 255.255.255.192
-ipv6 enable
-ipv6 add 2001:200:100::1/64
 int f1/0
 no shut
 ip add 4.20.20.13 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:4::1/64
-
+int f0/1
+no shut
+ip add 192.172.1.1 255.255.255.192
+ipv6 enable
+ipv6 add 2001:200:100::1/64
+ipv6 ospf 1 area 0
+no shut
+exit
+router ospf 1
+default-information originate always
+network 192.172.1.0 0.0.0.63 area 0
+redistribute bgp 9000 subnets
+ipv6 router ospf 1
+default-information originate always
+exit
+router bgp 9000
+address-family ipv4 unicast
+neighbor 4.20.20.14 remote-as 65300
+neighbor 4.20.20.1 remote-as 20000
+redistribute ospf 1
+address-family ipv6 unicast
+neighbor 2001:420:0:0::1 remote-as 20000
+neighbor 2001:420:0:4::2 remote-as 65300
+redistribute ospf 1
+exit
 
 
 ---Lisboa---
@@ -143,18 +162,19 @@ ipv6 add 2001:200:100:1::2/64
 ---EmpC---
 conf t 
 ipv6 unicast-routing
-int f0/1
-no shut
-ip add 140.1.1.1 255.255.255.128
-ipv6 enable
-ipv6 add 2001:140:0:1::1/64
 int f0/0
 no shut
 ip add 4.20.20.14 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:4::2/64
+int f0/1
+no shut
+ip add 140.1.1.1 255.255.255.128
+ipv6 enable
+ipv6 add 2001:140:0:1::1/64
 ipv6 ospf 1 area 0
-no shut exit
+no shut
+exit
 router ospf 1
 default-information originate always
 network 140.1.1.0 0.0.0.255
