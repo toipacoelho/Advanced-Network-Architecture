@@ -438,3 +438,128 @@ network 192.172.1.80 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
 exit
+
+---MPLS-TE-Lisboa---
+conf t
+mpls traffic-eng tunnels
+int FastEthernet 0/1
+mpls traffic-eng tunnels
+ip rsvp bandwidth 10240 1024
+exit
+router ospf 1
+mpls traffic-eng area 0
+mpls traffic-eng router-id Loopback 0
+int tunnel 2	
+ip unnumbered Loopback0
+tunnel destination 10.1.0.4
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng bandwidth 2048
+tunnel mpls traffic-eng path-option 1 dynamic
+ip route 120.1.1.0 255.255.255.128 tunnel2
+
+---MPLS-VPN-Aveiro---
+conf t
+mpls ip
+ip vrf VPN-1
+rd 9000:1
+route-target export 9000:1
+route-target import 9000:1
+exit
+int FastEthernet 0/0
+mpls ip
+int FastEthernet 1/0
+ip vrf forwarding VPN-1
+ip address 192.172.1.73 255.255.255.252
+exit
+router bgp 9000
+bgp router-id 3.3.3.3
+neighbor 10.0.0.5 remote-as 9000
+neighbor 10.1.0.5 update-source Loopback0
+address-family vpnv4
+neighbor 10.1.0.5 activate
+neighbor 10.1.0.5 send-community both
+address-family ipv4 vrf VPN-1
+redistribute static
+exit
+router ospf 1
+redistribute static subnets
+exit
+ip route vrf VPN-1 0.0.0.0 0.0.0.0 192.172.1.2 global
+ip route 120.1.1.0 255.255.255.128 FastEthernet1/0 192.172.1.73
+ip route 192.172.1.76 255.255.255.252 FastEthernet 1/0
+
+---MPLS-VPN-Oeiras---
+conf t
+mpls ip
+ip vrf VPN-1
+rd 9000:1
+route-target export 9000:1
+route-target import 9000:1
+exit
+int FastEthernet 0/0
+mpls ip
+int FastEthernet 1/0
+ip vrf forwarding VPN-1
+ip address 192.172.1.85 255.255.255.252
+exit
+router bgp 9000
+bgp router-id 4.4.4.4
+neighbor 10.1.0.4 remote-as 9000
+neighbor 10.1.0.4 update-source Loopback0
+address-family vpnv4
+neighbor 10.1.0.4 activate
+neighbor 10.1.0.4 send-community both
+address-family ipv4 vrf VPN-1
+redistribute static
+exit
+router ospf 1
+redistribute static subnets
+exit
+ip route vrf VPN-1 0.0.0.0 0.0.0.0 192.172.1.69 global
+ip route 120.1.1.128 255.255.255.128 FastEthernet1/0 192.172.1.86
+ip route 192.172.1.84 255.255.255.252 FastEthernet 1/0
+
+---MPLS-TE-EmpA1-Aveiro---
+conf t
+mpls traffic-eng tunnels
+int FastEthernet 0/0
+mpls traffic-eng tunnels
+ip rsvp bandwidth 10240 1024
+exit
+router ospf 1
+mpls traffic-eng area 0
+mpls traffic-eng router-id Loopback 0
+int tunnel 1
+ip unnumbered Loopback0
+tunnel destination 10.1.0.7
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng bandwidth 2048
+tunnel mpls traffic-eng path-option 1 dynamic
+exit
+ip route 120.1.1.128 255.255.255.128 tunnel1
+int tunnel 2
+ip unnumbered Loopback0
+tunnel destination 10.1.0.3
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng bandwidth 2048
+tunnel mpls traffic-eng path-option 1 dynamic
+ip route 192.172.1.128 255.255.255.128 tunnel2
+
+---MPLS-TE-EmpA2-Oeiras---
+conf t
+mpls traffic-eng tunnels
+int FastEthernet 0/0
+mpls traffic-eng tunnels
+ip rsvp bandwidth 10240 1024
+exit
+router ospf 1
+mpls traffic-eng area 0
+mpls traffic-eng router-id Loopback 0
+int tunnel 1
+ip unnumbered Loopback0
+tunnel destination 10.1.0.6
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng bandwidth 2048
+tunnel mpls traffic-eng path-option 1 dynamic
+exit
+ip route 120.1.1.0 255.255.255.128 tunnel1
