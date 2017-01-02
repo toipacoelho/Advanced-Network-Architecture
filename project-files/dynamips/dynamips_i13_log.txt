@@ -1,13 +1,9 @@
-Jan 02 04:04:20.306 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:20.307 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14138.
-Jan 02 04:04:20.509 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:20.556 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:20.557 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:20.599 HYPERVISOR: exec_cmd: ethsw create netA1 
-Jan 02 04:04:23.077 HYPERVISOR: exec_cmd: nio create_udp udp-e5848527-79da-473f-a6bb-35ee218079f6 10025 127.0.0.1 10024 
-Jan 02 04:04:23.120 HYPERVISOR: exec_cmd: ethsw add_nio netA1 udp-e5848527-79da-473f-a6bb-35ee218079f6 
-Jan 02 04:04:23.172 HYPERVISOR: exec_cmd: ethsw set_access_port netA1 udp-e5848527-79da-473f-a6bb-35ee218079f6 1 
-Jan 02 05:18:05.154 HYPERVISOR: exec_cmd: ethsw delete netA1 
-Jan 02 05:18:05.210 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:05.235 HYPERVISOR: Stopped.
-Jan 02 05:18:05.235 GENERAL: reset done.
+Jan 02 19:16:28.992 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:28.994 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10235.
+Jan 02 19:16:29.282 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:29.343 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:29.343 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:29.381 HYPERVISOR: exec_cmd: ethsw create netA1 
+Jan 02 19:16:33.078 HYPERVISOR: exec_cmd: nio create_udp udp-8bbf1a12-ecd0-4f2f-a7c5-f23a6346b5cc 10025 127.0.0.1 10024 
+Jan 02 19:16:33.149 HYPERVISOR: exec_cmd: ethsw add_nio netA1 udp-8bbf1a12-ecd0-4f2f-a7c5-f23a6346b5cc 
+Jan 02 19:16:33.221 HYPERVISOR: exec_cmd: ethsw set_access_port netA1 udp-8bbf1a12-ecd0-4f2f-a7c5-f23a6346b5cc 1 

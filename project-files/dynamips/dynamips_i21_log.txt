@@ -1,13 +1,9 @@
-Jan 02 04:04:21.071 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:21.071 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14153.
-Jan 02 04:04:21.278 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:21.322 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:21.323 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:21.367 HYPERVISOR: exec_cmd: ethsw create Internet Core 
-Jan 02 04:04:23.943 HYPERVISOR: exec_cmd: nio create_udp udp-12b5a320-d555-43a1-9a7b-cc75b73b1f77 10047 127.0.0.1 10046 
-Jan 02 04:04:24.011 HYPERVISOR: exec_cmd: ethsw add_nio Internet Core udp-12b5a320-d555-43a1-9a7b-cc75b73b1f77 
-Jan 02 04:04:24.053 HYPERVISOR: exec_cmd: ethsw set_access_port Internet Core udp-12b5a320-d555-43a1-9a7b-cc75b73b1f77 1 
-Jan 02 05:18:05.160 HYPERVISOR: exec_cmd: ethsw delete Internet Core 
-Jan 02 05:18:05.219 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:05.538 HYPERVISOR: Stopped.
-Jan 02 05:18:05.538 GENERAL: reset done.
+Jan 02 19:16:30.093 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:30.095 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10252.
+Jan 02 19:16:30.414 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:30.477 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:30.477 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:30.541 HYPERVISOR: exec_cmd: ethsw create Internet Core 
+Jan 02 19:16:34.595 HYPERVISOR: exec_cmd: nio create_udp udp-3139dd7b-ee10-4cf6-a197-02fdbb78460a 10047 127.0.0.1 10046 
+Jan 02 19:16:34.661 HYPERVISOR: exec_cmd: ethsw add_nio Internet Core udp-3139dd7b-ee10-4cf6-a197-02fdbb78460a 
+Jan 02 19:16:34.735 HYPERVISOR: exec_cmd: ethsw set_access_port Internet Core udp-3139dd7b-ee10-4cf6-a197-02fdbb78460a 1 

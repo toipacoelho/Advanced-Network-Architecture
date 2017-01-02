@@ -1,13 +1,9 @@
-Jan 02 04:04:20.653 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:20.654 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14144.
-Jan 02 04:04:20.858 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:20.899 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:20.900 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:20.939 HYPERVISOR: exec_cmd: ethsw create netA2 
-Jan 02 04:04:23.401 HYPERVISOR: exec_cmd: nio create_udp udp-186a28bd-29ae-4ee0-8c39-6c0a8e78009c 10033 127.0.0.1 10032 
-Jan 02 04:04:23.439 HYPERVISOR: exec_cmd: ethsw add_nio netA2 udp-186a28bd-29ae-4ee0-8c39-6c0a8e78009c 
-Jan 02 04:04:23.498 HYPERVISOR: exec_cmd: ethsw set_access_port netA2 udp-186a28bd-29ae-4ee0-8c39-6c0a8e78009c 1 
-Jan 02 05:18:05.140 HYPERVISOR: exec_cmd: ethsw delete netA2 
-Jan 02 05:18:05.203 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:05.619 HYPERVISOR: Stopped.
-Jan 02 05:18:05.619 GENERAL: reset done.
+Jan 02 19:16:29.289 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:29.291 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10241.
+Jan 02 19:16:29.519 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:29.580 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:29.581 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:29.631 HYPERVISOR: exec_cmd: ethsw create netA2 
+Jan 02 19:16:33.737 HYPERVISOR: exec_cmd: nio create_udp udp-54c1c48a-abff-469b-9318-4a6c06bf10e1 10033 127.0.0.1 10032 
+Jan 02 19:16:33.842 HYPERVISOR: exec_cmd: ethsw add_nio netA2 udp-54c1c48a-abff-469b-9318-4a6c06bf10e1 
+Jan 02 19:16:33.921 HYPERVISOR: exec_cmd: ethsw set_access_port netA2 udp-54c1c48a-abff-469b-9318-4a6c06bf10e1 1 

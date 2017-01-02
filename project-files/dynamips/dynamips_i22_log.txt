@@ -1,13 +1,9 @@
-Jan 02 04:04:21.207 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:21.208 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14156.
-Jan 02 04:04:21.424 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:21.481 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:21.482 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:21.535 HYPERVISOR: exec_cmd: ethsw create netC 
-Jan 02 04:04:24.033 HYPERVISOR: exec_cmd: nio create_udp udp-602448f6-16d8-4544-b0ef-744a8e2342a3 10049 127.0.0.1 10048 
-Jan 02 04:04:24.068 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-602448f6-16d8-4544-b0ef-744a8e2342a3 
-Jan 02 04:04:24.112 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-602448f6-16d8-4544-b0ef-744a8e2342a3 1 
-Jan 02 05:18:05.151 HYPERVISOR: exec_cmd: ethsw delete netC 
-Jan 02 05:18:05.214 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:05.651 HYPERVISOR: Stopped.
-Jan 02 05:18:05.651 GENERAL: reset done.
+Jan 02 19:16:30.295 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:30.296 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10253.
+Jan 02 19:16:30.557 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:30.626 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:30.626 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:30.704 HYPERVISOR: exec_cmd: ethsw create netC 
+Jan 02 19:16:34.782 HYPERVISOR: exec_cmd: nio create_udp udp-a7d6a374-6f64-4497-9e54-0abf509c6e13 10049 127.0.0.1 10048 
+Jan 02 19:16:34.867 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-a7d6a374-6f64-4497-9e54-0abf509c6e13 
+Jan 02 19:16:34.901 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-a7d6a374-6f64-4497-9e54-0abf509c6e13 1 

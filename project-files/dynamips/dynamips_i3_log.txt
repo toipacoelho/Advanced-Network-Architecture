@@ -1,54 +1,44 @@
-Jan 02 04:04:18.039 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:18.040 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14112.
-Jan 02 04:04:18.508 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:18.543 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:18.544 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:18.575 HYPERVISOR: exec_cmd: vm create Sintra 20 c7200 
-Jan 02 04:04:18.577 VM: VM Sintra created.
-Jan 02 04:04:18.612 HYPERVISOR: exec_cmd: vm set_con_tcp_port Sintra 5001 
-Jan 02 04:04:18.647 HYPERVISOR: exec_cmd: c7200 get_mac_addr Sintra 
-Jan 02 04:04:18.681 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:18.715 HYPERVISOR: exec_cmd: vm slot_add_binding Sintra 0 0 C7200-IO-FE 
-Jan 02 04:04:18.750 HYPERVISOR: exec_cmd: vm set_exec_area Sintra 64 
-Jan 02 04:04:18.784 HYPERVISOR: exec_cmd: c7200 set_mac_addr Sintra ca14.23a8.0000 
-Jan 02 04:04:18.819 HYPERVISOR: exec_cmd: vm set_ram Sintra 512 
-Jan 02 04:04:18.854 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:18.889 HYPERVISOR: exec_cmd: vm set_idle_pc Sintra 0x6318687c 
-Jan 02 04:04:18.925 HYPERVISOR: exec_cmd: vm set_nvram Sintra 512 
-Jan 02 04:04:18.958 HYPERVISOR: exec_cmd: vm set_disk0 Sintra 0 
-Jan 02 04:04:18.993 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:19.027 HYPERVISOR: exec_cmd: vm slot_remove_binding Sintra 0 0 
-Jan 02 04:04:19.064 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:19.101 HYPERVISOR: exec_cmd: vm slot_add_binding Sintra 0 0 C7200-IO-2FE 
-Jan 02 04:04:19.137 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:19.170 HYPERVISOR: exec_cmd: vm slot_add_binding Sintra 2 0 PA-2FE-TX 
-Jan 02 04:04:19.205 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:19.240 HYPERVISOR: exec_cmd: vm slot_add_binding Sintra 1 0 PA-2FE-TX 
-Jan 02 04:04:19.284 HYPERVISOR: exec_cmd: vm set_ios Sintra C:/Users/Filipe/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
-Jan 02 04:04:19.334 HYPERVISOR: exec_cmd: vm set_config Sintra configs/i20_startup-config.cfg 
-Jan 02 04:04:22.005 HYPERVISOR: exec_cmd: nio create_udp udp-60d0a9ac-8b70-480f-bd7a-5f9bba63c29e 10003 127.0.0.1 10002 
-Jan 02 04:04:22.053 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sintra 1 1 udp-60d0a9ac-8b70-480f-bd7a-5f9bba63c29e 
-Jan 02 04:04:22.105 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:22.226 HYPERVISOR: exec_cmd: nio create_udp udp-3949757a-6d7d-4b91-a75a-296981326992 10006 127.0.0.1 10007 
-Jan 02 04:04:22.267 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sintra 1 0 udp-3949757a-6d7d-4b91-a75a-296981326992 
-Jan 02 04:04:22.288 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:04:23.749 HYPERVISOR: exec_cmd: nio create_udp udp-9fed685b-fb4c-42e7-b10e-d746a1adc597 10042 127.0.0.1 10043 
-Jan 02 04:04:23.786 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sintra 0 0 udp-9fed685b-fb4c-42e7-b10e-d746a1adc597 
-Jan 02 04:04:23.831 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:21:05.890 HYPERVISOR: exec_cmd: vm set_ghost_status Sintra 2 
-Jan 02 04:21:05.914 HYPERVISOR: exec_cmd: vm set_ghost_file Sintra c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
-Jan 02 04:21:05.923 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 04:21:05.933 HYPERVISOR: exec_cmd: vm start Sintra 
-Jan 02 04:38:02.995 HYPERVISOR: exec_cmd: vm extract_config Sintra 
-Jan 02 05:17:50.806 HYPERVISOR: exec_cmd: vm extract_config Sintra 
-Jan 02 05:18:03.298 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 05:18:03.333 HYPERVISOR: exec_cmd: vm stop Sintra 
-Jan 02 05:18:03.487 VM: VM Sintra shutdown.
-Jan 02 05:18:03.493 HYPERVISOR: exec_cmd: vm extract_config Sintra 
-Jan 02 05:18:05.960 HYPERVISOR: exec_cmd: vm get_status Sintra 
-Jan 02 05:18:06.034 HYPERVISOR: exec_cmd: vm extract_config Sintra 
-Jan 02 05:18:06.135 HYPERVISOR: exec_cmd: vm delete Sintra 
-Jan 02 05:18:06.135 VM: VM Sintra destroyed.
-Jan 02 05:18:06.239 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:06.705 HYPERVISOR: Stopped.
-Jan 02 05:18:06.705 GENERAL: reset done.
+Jan 02 19:16:24.493 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:24.494 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10209.
+Jan 02 19:16:24.566 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:24.588 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:24.983 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:25.013 HYPERVISOR: exec_cmd: vm create Lisboa 22 c7200 
+Jan 02 19:16:25.015 VM: VM Lisboa created.
+Jan 02 19:16:25.043 HYPERVISOR: exec_cmd: vm set_con_tcp_port Lisboa 5003 
+Jan 02 19:16:25.071 HYPERVISOR: exec_cmd: c7200 get_mac_addr Lisboa 
+Jan 02 19:16:25.104 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:25.131 HYPERVISOR: exec_cmd: vm slot_add_binding Lisboa 0 0 C7200-IO-FE 
+Jan 02 19:16:25.165 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:25.195 HYPERVISOR: exec_cmd: vm slot_remove_binding Lisboa 0 0 
+Jan 02 19:16:25.228 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:25.301 HYPERVISOR: exec_cmd: vm slot_add_binding Lisboa 0 0 C7200-IO-2FE 
+Jan 02 19:16:25.448 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:25.567 HYPERVISOR: exec_cmd: vm set_idle_pc Lisboa 0x6318687c 
+Jan 02 19:16:25.692 HYPERVISOR: exec_cmd: c7200 set_mac_addr Lisboa ca16.1afc.0000 
+Jan 02 19:16:25.829 HYPERVISOR: exec_cmd: vm set_exec_area Lisboa 64 
+Jan 02 19:16:25.960 HYPERVISOR: exec_cmd: vm set_ios Lisboa C:/Users/Pedro Coelho/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 02 19:16:26.152 HYPERVISOR: exec_cmd: vm set_nvram Lisboa 512 
+Jan 02 19:16:26.478 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:26.908 HYPERVISOR: exec_cmd: vm slot_add_binding Lisboa 1 0 PA-2FE-TX 
+Jan 02 19:16:27.282 HYPERVISOR: exec_cmd: vm set_disk0 Lisboa 0 
+Jan 02 19:16:27.337 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:27.389 HYPERVISOR: exec_cmd: vm slot_add_binding Lisboa 2 0 PA-2FE-TX 
+Jan 02 19:16:27.446 HYPERVISOR: exec_cmd: vm set_ram Lisboa 512 
+Jan 02 19:16:27.495 HYPERVISOR: exec_cmd: vm set_config Lisboa configs/i22_startup-config.cfg 
+Jan 02 19:16:31.587 HYPERVISOR: exec_cmd: nio create_udp udp-37c2a650-90ce-40fe-a954-6f8484fbe401 10005 127.0.0.1 10004 
+Jan 02 19:16:31.647 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lisboa 1 0 udp-37c2a650-90ce-40fe-a954-6f8484fbe401 
+Jan 02 19:16:31.686 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:31.763 HYPERVISOR: exec_cmd: nio create_udp udp-735f63b0-8cf8-4ebc-bbe6-1905affb3be5 10007 127.0.0.1 10006 
+Jan 02 19:16:31.822 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lisboa 0 0 udp-735f63b0-8cf8-4ebc-bbe6-1905affb3be5 
+Jan 02 19:16:31.892 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:32.026 HYPERVISOR: exec_cmd: nio create_udp udp-1ba3c570-5fa4-4255-870c-37ac4aff2d1d 10008 127.0.0.1 10009 
+Jan 02 19:16:32.106 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lisboa 0 1 udp-1ba3c570-5fa4-4255-870c-37ac4aff2d1d 
+Jan 02 19:16:32.169 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:32.705 HYPERVISOR: exec_cmd: nio create_udp udp-c0987c94-68f1-4ccf-8882-2262c66f7909 10020 127.0.0.1 10021 
+Jan 02 19:16:32.788 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lisboa 1 1 udp-c0987c94-68f1-4ccf-8882-2262c66f7909 
+Jan 02 19:16:32.859 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:33.797 HYPERVISOR: exec_cmd: nio create_udp udp-fbcf6620-2b6f-484a-8d04-6be5a6d5e117 10034 127.0.0.1 10035 
+Jan 02 19:16:33.899 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Lisboa 2 0 udp-fbcf6620-2b6f-484a-8d04-6be5a6d5e117 
+Jan 02 19:16:33.952 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 02 19:16:47.659 HYPERVISOR: exec_cmd: vm extract_config Lisboa 

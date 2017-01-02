@@ -1,13 +1,9 @@
-Jan 02 04:04:20.956 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 04:04:20.957 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14151.
-Jan 02 04:04:21.199 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 04:04:21.232 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 04:04:21.233 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 04:04:21.269 HYPERVISOR: exec_cmd: ethsw create netL1 
-Jan 02 04:04:23.727 HYPERVISOR: exec_cmd: nio create_udp udp-651d561a-3117-4def-86f0-085a1b5a8e8a 10041 127.0.0.1 10040 
-Jan 02 04:04:23.771 HYPERVISOR: exec_cmd: ethsw add_nio netL1 udp-651d561a-3117-4def-86f0-085a1b5a8e8a 
-Jan 02 04:04:23.820 HYPERVISOR: exec_cmd: ethsw set_access_port netL1 udp-651d561a-3117-4def-86f0-085a1b5a8e8a 1 
-Jan 02 05:18:05.157 HYPERVISOR: exec_cmd: ethsw delete netL1 
-Jan 02 05:18:05.226 HYPERVISOR: exec_cmd: hypervisor stop 
-Jan 02 05:18:05.319 HYPERVISOR: Stopped.
-Jan 02 05:18:05.319 GENERAL: reset done.
+Jan 02 19:16:29.818 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 19:16:29.820 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10247.
+Jan 02 19:16:30.058 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 19:16:30.130 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 19:16:30.130 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 19:16:30.214 HYPERVISOR: exec_cmd: ethsw create netL1 
+Jan 02 19:16:34.235 HYPERVISOR: exec_cmd: nio create_udp udp-a7608b85-5714-4423-86f5-0856b1adc6a6 10041 127.0.0.1 10040 
+Jan 02 19:16:34.299 HYPERVISOR: exec_cmd: ethsw add_nio netL1 udp-a7608b85-5714-4423-86f5-0856b1adc6a6 
+Jan 02 19:16:34.391 HYPERVISOR: exec_cmd: ethsw set_access_port netL1 udp-a7608b85-5714-4423-86f5-0856b1adc6a6 1 
