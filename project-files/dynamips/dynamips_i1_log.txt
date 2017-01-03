@@ -47,3 +47,4 @@ Jan 03 11:36:32.901 HYPERVISOR: exec_cmd: vm get_status Lisboa
 Jan 03 11:36:32.919 HYPERVISOR: exec_cmd: vm start Lisboa 
 Jan 03 11:59:54.853 HYPERVISOR: exec_cmd: nio bind_filter udp-90b44fde-523f-43b6-82f1-ae7d468b237e 2 capture 
 Jan 03 11:59:54.863 HYPERVISOR: exec_cmd: nio setup_filter udp-90b44fde-523f-43b6-82f1-ae7d468b237e 2 en10mb C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\captures\Lisboa_FastEthernet0-0_to_Sintra_FastEthernet1-0.pcap 
+Jan 03 12:04:41.411 HYPERVISOR: exec_cmd: vm extract_config Lisboa 

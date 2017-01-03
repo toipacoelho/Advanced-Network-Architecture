@@ -48,3 +48,4 @@ Jan 03 11:36:32.948 HYPERVISOR: exec_cmd: vm set_ghost_status London 2
 Jan 03 11:36:32.968 HYPERVISOR: exec_cmd: vm set_ghost_file London c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
 Jan 03 11:36:32.980 HYPERVISOR: exec_cmd: vm get_status London 
 Jan 03 11:36:32.990 HYPERVISOR: exec_cmd: vm start London 
+Jan 03 12:04:41.241 HYPERVISOR: exec_cmd: vm extract_config London 

@@ -29,28 +29,6 @@
                 }
             },
             {
-                "description": "Link from London port FastEthernet1/0 to Porto port FastEthernet0/0",
-                "destination_node_id": 21,
-                "destination_port_id": 69,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -6.999323976034901,
-                    "y": 21.767445790837
-                },
-                "id": 2,
-                "source_node_id": 19,
-                "source_port_id": 55,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 72.9993239760349,
-                    "y": 22.232554209163
-                }
-            },
-            {
                 "description": "Link from London port FastEthernet2/0 to Lisboa port FastEthernet1/0",
                 "destination_node_id": 22,
                 "destination_port_id": 73,
@@ -61,7 +39,7 @@
                     "x": -0.9525909361905676,
                     "y": 0.8523862168870195
                 },
-                "id": 3,
+                "id": 2,
                 "source_node_id": 19,
                 "source_port_id": 53,
                 "source_port_label": {
@@ -83,7 +61,7 @@
                     "x": -6.997417605471988,
                     "y": 22.45451610915309
                 },
-                "id": 4,
+                "id": 3,
                 "source_node_id": 20,
                 "source_port_id": 61,
                 "source_port_label": {
@@ -92,6 +70,28 @@
                     "text": "f1/0",
                     "x": 72.99741760547198,
                     "y": 21.54548389084691
+                }
+            },
+            {
+                "description": "Link from London port FastEthernet1/0 to Porto port FastEthernet0/0",
+                "destination_node_id": 21,
+                "destination_port_id": 69,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.999323976034901,
+                    "y": 21.767445790837
+                },
+                "id": 4,
+                "source_node_id": 19,
+                "source_port_id": 55,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 72.9993239760349,
+                    "y": 22.232554209163
                 }
             },
             {
@@ -574,7 +574,7 @@
                         "adapter_number": 1,
                         "description": "connected to Porto on port FastEthernet0/0",
                         "id": 55,
-                        "link_id": 2,
+                        "link_id": 4,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -592,7 +592,7 @@
                         "adapter_number": 2,
                         "description": "connected to Lisboa on port FastEthernet1/0",
                         "id": 53,
-                        "link_id": 3,
+                        "link_id": 2,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -684,7 +684,7 @@
                         "adapter_number": 1,
                         "description": "connected to Lisboa on port FastEthernet0/0",
                         "id": 61,
-                        "link_id": 4,
+                        "link_id": 3,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -813,7 +813,7 @@
                         "adapter_number": 0,
                         "description": "connected to London on port FastEthernet1/0",
                         "id": 69,
-                        "link_id": 2,
+                        "link_id": 4,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -887,7 +887,7 @@
                         "adapter_number": 1,
                         "description": "connected to London on port FastEthernet2/0",
                         "id": 73,
-                        "link_id": 3,
+                        "link_id": 2,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -920,7 +920,7 @@
                         "adapter_number": 0,
                         "description": "connected to Sintra on port FastEthernet1/0",
                         "id": 75,
-                        "link_id": 4,
+                        "link_id": 3,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0

@@ -39,3 +39,4 @@ Jan 03 11:36:32.909 HYPERVISOR: exec_cmd: vm set_ghost_status Porto 2
 Jan 03 11:36:32.928 HYPERVISOR: exec_cmd: vm set_ghost_file Porto c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
 Jan 03 11:36:32.940 HYPERVISOR: exec_cmd: vm get_status Porto 
 Jan 03 11:36:32.959 HYPERVISOR: exec_cmd: vm start Porto 
+Jan 03 12:04:41.307 HYPERVISOR: exec_cmd: vm extract_config Porto 

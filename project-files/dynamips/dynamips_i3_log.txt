@@ -39,3 +39,4 @@ Jan 03 11:36:33.194 HYPERVISOR: exec_cmd: vm set_ghost_status Sintra 2
 Jan 03 11:36:33.226 HYPERVISOR: exec_cmd: vm set_ghost_file Sintra c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
 Jan 03 11:36:33.247 HYPERVISOR: exec_cmd: vm get_status Sintra 
 Jan 03 11:36:33.263 HYPERVISOR: exec_cmd: vm start Sintra 
+Jan 03 12:04:41.265 HYPERVISOR: exec_cmd: vm extract_config Sintra 

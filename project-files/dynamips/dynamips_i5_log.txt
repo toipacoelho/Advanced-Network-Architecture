@@ -39,3 +39,4 @@ Jan 03 11:36:32.826 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro 2
 Jan 03 11:36:32.849 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
 Jan 03 11:36:32.862 HYPERVISOR: exec_cmd: vm get_status Aveiro 
 Jan 03 11:36:32.880 HYPERVISOR: exec_cmd: vm start Aveiro 
+Jan 03 12:04:41.436 HYPERVISOR: exec_cmd: vm extract_config Aveiro 

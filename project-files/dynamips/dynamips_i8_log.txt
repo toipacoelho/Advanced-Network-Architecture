@@ -25,3 +25,4 @@ Jan 03 11:36:31.393 HYPERVISOR: exec_cmd: vm set_ghost_status EmpC 2
 Jan 03 11:36:31.407 HYPERVISOR: exec_cmd: vm set_ghost_file EmpC c3725-advipservicesk9-mz.124-21.bin-128.ghost 
 Jan 03 11:36:31.416 HYPERVISOR: exec_cmd: vm get_status EmpC 
 Jan 03 11:36:31.423 HYPERVISOR: exec_cmd: vm start EmpC 
+Jan 03 12:04:41.372 HYPERVISOR: exec_cmd: vm extract_config EmpC 
