@@ -31,3 +31,11 @@ Jan 03 00:12:16.425 HYPERVISOR: exec_cmd: vm stop EmpC
 Jan 03 00:12:16.544 VM: VM EmpC shutdown.
 Jan 03 00:12:16.578 HYPERVISOR: exec_cmd: vm extract_config EmpC 
 Jan 03 00:12:18.430 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 03 00:13:35.489 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 03 00:13:35.527 HYPERVISOR: exec_cmd: vm start EmpC 
+Jan 03 00:53:49.378 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 03 00:53:49.437 HYPERVISOR: exec_cmd: vm stop EmpC 
+Jan 03 00:53:49.561 VM: VM EmpC shutdown.
+Jan 03 00:53:49.568 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 03 00:55:39.273 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 03 00:55:39.301 HYPERVISOR: exec_cmd: vm start EmpC 

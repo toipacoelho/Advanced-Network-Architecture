@@ -54,3 +54,11 @@ Jan 03 00:12:16.694 HYPERVISOR: exec_cmd: vm stop London
 Jan 03 00:12:16.904 VM: VM London shutdown.
 Jan 03 00:12:16.910 HYPERVISOR: exec_cmd: vm extract_config London 
 Jan 03 00:12:18.525 HYPERVISOR: exec_cmd: vm extract_config London 
+Jan 03 00:13:36.267 HYPERVISOR: exec_cmd: vm get_status London 
+Jan 03 00:13:36.381 HYPERVISOR: exec_cmd: vm start London 
+Jan 03 00:53:49.620 HYPERVISOR: exec_cmd: vm get_status London 
+Jan 03 00:53:49.646 HYPERVISOR: exec_cmd: vm stop London 
+Jan 03 00:53:49.854 VM: VM London shutdown.
+Jan 03 00:53:49.860 HYPERVISOR: exec_cmd: vm extract_config London 
+Jan 03 00:55:39.972 HYPERVISOR: exec_cmd: vm get_status London 
+Jan 03 00:55:40.020 HYPERVISOR: exec_cmd: vm start London 

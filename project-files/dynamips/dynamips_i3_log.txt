@@ -45,3 +45,11 @@ Jan 03 00:12:16.465 HYPERVISOR: exec_cmd: vm stop Aveiro
 Jan 03 00:12:16.625 VM: VM Aveiro shutdown.
 Jan 03 00:12:16.661 HYPERVISOR: exec_cmd: vm extract_config Aveiro 
 Jan 03 00:12:18.488 HYPERVISOR: exec_cmd: vm extract_config Aveiro 
+Jan 03 00:13:35.879 HYPERVISOR: exec_cmd: vm get_status Aveiro 
+Jan 03 00:13:35.911 HYPERVISOR: exec_cmd: vm start Aveiro 
+Jan 03 00:53:49.433 HYPERVISOR: exec_cmd: vm get_status Aveiro 
+Jan 03 00:53:49.462 HYPERVISOR: exec_cmd: vm stop Aveiro 
+Jan 03 00:53:49.625 VM: VM Aveiro shutdown.
+Jan 03 00:53:49.652 HYPERVISOR: exec_cmd: vm extract_config Aveiro 
+Jan 03 00:55:39.573 HYPERVISOR: exec_cmd: vm get_status Aveiro 
+Jan 03 00:55:39.621 HYPERVISOR: exec_cmd: vm start Aveiro 

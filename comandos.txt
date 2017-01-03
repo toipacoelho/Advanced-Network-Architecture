@@ -566,7 +566,7 @@ exit
 ip route 120.1.1.128 255.255.255.128 tunnel1
 int tunnel 2
 ip unnumbered Loopback0
-tunnel destination 10.1.0.3
+tunnel destination 10.0.0.3
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic

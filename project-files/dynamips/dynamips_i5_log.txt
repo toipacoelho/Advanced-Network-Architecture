@@ -51,3 +51,11 @@ Jan 03 00:12:16.472 HYPERVISOR: exec_cmd: vm stop Lisboa
 Jan 03 00:12:16.663 VM: VM Lisboa shutdown.
 Jan 03 00:12:16.714 HYPERVISOR: exec_cmd: vm extract_config Lisboa 
 Jan 03 00:12:18.550 HYPERVISOR: exec_cmd: vm extract_config Lisboa 
+Jan 03 00:13:35.885 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 03 00:13:35.917 HYPERVISOR: exec_cmd: vm start Lisboa 
+Jan 03 00:53:49.442 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 03 00:53:49.466 HYPERVISOR: exec_cmd: vm stop Lisboa 
+Jan 03 00:53:49.668 VM: VM Lisboa shutdown.
+Jan 03 00:53:49.719 HYPERVISOR: exec_cmd: vm extract_config Lisboa 
+Jan 03 00:55:39.636 HYPERVISOR: exec_cmd: vm get_status Lisboa 
+Jan 03 00:55:39.663 HYPERVISOR: exec_cmd: vm start Lisboa 

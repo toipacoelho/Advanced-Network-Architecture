@@ -45,3 +45,11 @@ Jan 03 00:12:16.615 HYPERVISOR: exec_cmd: vm stop Porto
 Jan 03 00:12:16.767 VM: VM Porto shutdown.
 Jan 03 00:12:16.788 HYPERVISOR: exec_cmd: vm extract_config Porto 
 Jan 03 00:12:18.444 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 03 00:13:35.960 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 03 00:13:35.983 HYPERVISOR: exec_cmd: vm start Porto 
+Jan 03 00:53:49.550 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 03 00:53:49.558 HYPERVISOR: exec_cmd: vm stop Porto 
+Jan 03 00:53:49.719 VM: VM Porto shutdown.
+Jan 03 00:53:49.752 HYPERVISOR: exec_cmd: vm extract_config Porto 
+Jan 03 00:55:39.694 HYPERVISOR: exec_cmd: vm get_status Porto 
+Jan 03 00:55:39.716 HYPERVISOR: exec_cmd: vm start Porto 

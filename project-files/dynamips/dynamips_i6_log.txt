@@ -58,3 +58,11 @@ Jan 03 00:12:16.457 HYPERVISOR: exec_cmd: vm stop Oeiras
 Jan 03 00:12:16.608 VM: VM Oeiras shutdown.
 Jan 03 00:12:16.642 HYPERVISOR: exec_cmd: vm extract_config Oeiras 
 Jan 03 00:12:18.500 HYPERVISOR: exec_cmd: vm extract_config Oeiras 
+Jan 03 00:13:35.550 HYPERVISOR: exec_cmd: vm get_status Oeiras 
+Jan 03 00:13:35.560 HYPERVISOR: exec_cmd: vm start Oeiras 
+Jan 03 00:53:49.409 HYPERVISOR: exec_cmd: vm get_status Oeiras 
+Jan 03 00:53:49.452 HYPERVISOR: exec_cmd: vm stop Oeiras 
+Jan 03 00:53:49.610 VM: VM Oeiras shutdown.
+Jan 03 00:53:49.633 HYPERVISOR: exec_cmd: vm extract_config Oeiras 
+Jan 03 00:55:39.285 HYPERVISOR: exec_cmd: vm get_status Oeiras 
+Jan 03 00:55:39.309 HYPERVISOR: exec_cmd: vm start Oeiras 

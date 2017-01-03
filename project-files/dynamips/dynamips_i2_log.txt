@@ -45,3 +45,11 @@ Jan 03 00:12:16.781 HYPERVISOR: exec_cmd: vm stop Sintra
 Jan 03 00:12:16.943 VM: VM Sintra shutdown.
 Jan 03 00:12:16.955 HYPERVISOR: exec_cmd: vm extract_config Sintra 
 Jan 03 00:12:18.474 HYPERVISOR: exec_cmd: vm extract_config Sintra 
+Jan 03 00:13:36.437 HYPERVISOR: exec_cmd: vm get_status Sintra 
+Jan 03 00:13:36.499 HYPERVISOR: exec_cmd: vm start Sintra 
+Jan 03 00:53:49.728 HYPERVISOR: exec_cmd: vm get_status Sintra 
+Jan 03 00:53:49.770 HYPERVISOR: exec_cmd: vm stop Sintra 
+Jan 03 00:53:49.928 VM: VM Sintra shutdown.
+Jan 03 00:53:49.934 HYPERVISOR: exec_cmd: vm extract_config Sintra 
+Jan 03 00:55:40.083 HYPERVISOR: exec_cmd: vm get_status Sintra 
+Jan 03 00:55:40.129 HYPERVISOR: exec_cmd: vm start Sintra 
