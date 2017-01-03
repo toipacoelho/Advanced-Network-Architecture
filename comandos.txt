@@ -558,7 +558,7 @@ mpls traffic-eng area 0
 mpls traffic-eng router-id Loopback 0
 int tunnel 1
 ip unnumbered Loopback0
-tunnel destination 10.0.0.7
+tunnel destination 10.0.0.9
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic
@@ -584,7 +584,7 @@ mpls traffic-eng area 0
 mpls traffic-eng router-id Loopback 0
 int tunnel 1
 ip unnumbered Loopback0
-tunnel destination 10.0.0.6
+tunnel destination 10.0.0.8
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic
