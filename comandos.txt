@@ -478,7 +478,7 @@ mpls traffic-eng area 0
 mpls traffic-eng router-id Loopback 0
 int tunnel 2	
 ip unnumbered Loopback0
-tunnel destination 10.1.0.4
+tunnel destination 10.0.0.4
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic
@@ -501,10 +501,10 @@ exit
 router bgp 9000
 bgp router-id 3.3.3.3
 neighbor 10.0.0.5 remote-as 9000
-neighbor 10.1.0.5 update-source Loopback0
+neighbor 10.0.0.5 update-source Loopback0
 address-family vpnv4
-neighbor 10.1.0.5 activate
-neighbor 10.1.0.5 send-community both
+neighbor 10.0.0.5 activate
+neighbor 10.0.0.5 send-community both
 address-family ipv4 vrf VPN-1
 redistribute static
 exit
@@ -531,11 +531,11 @@ ip address 192.172.1.85 255.255.255.252
 exit
 router bgp 9000
 bgp router-id 4.4.4.4
-neighbor 10.1.0.4 remote-as 9000
-neighbor 10.1.0.4 update-source Loopback0
+neighbor 10.0.0.4 remote-as 9000
+neighbor 10.0.0.4 update-source Loopback0
 address-family vpnv4
-neighbor 10.1.0.4 activate
-neighbor 10.1.0.4 send-community both
+neighbor 10.0.0.4 activate
+neighbor 10.0.0.4 send-community both
 address-family ipv4 vrf VPN-1
 redistribute static
 exit
@@ -558,7 +558,7 @@ mpls traffic-eng area 0
 mpls traffic-eng router-id Loopback 0
 int tunnel 1
 ip unnumbered Loopback0
-tunnel destination 10.1.0.7
+tunnel destination 10.0.0.7
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic
@@ -584,7 +584,7 @@ mpls traffic-eng area 0
 mpls traffic-eng router-id Loopback 0
 int tunnel 1
 ip unnumbered Loopback0
-tunnel destination 10.1.0.6
+tunnel destination 10.0.0.6
 tunnel mode mpls traffic-eng
 tunnel mpls traffic-eng bandwidth 2048
 tunnel mpls traffic-eng path-option 1 dynamic
