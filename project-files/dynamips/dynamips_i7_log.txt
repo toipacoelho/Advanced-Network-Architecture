@@ -1,15 +1,15 @@
-Jan 02 23:15:07.149 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 23:15:07.150 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3192.
-Jan 02 23:15:07.374 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 23:15:07.405 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 23:15:07.406 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 23:15:07.440 HYPERVISOR: exec_cmd: ethsw create Ethernet Core 
-Jan 02 23:15:10.525 HYPERVISOR: exec_cmd: nio create_udp udp-b3706823-1701-49be-9a8b-e9aedbda3442 10009 127.0.0.1 10008 
-Jan 02 23:15:10.592 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-b3706823-1701-49be-9a8b-e9aedbda3442 
-Jan 02 23:15:10.639 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-b3706823-1701-49be-9a8b-e9aedbda3442 1 
-Jan 02 23:15:10.694 HYPERVISOR: exec_cmd: nio create_udp udp-2176fafc-59cf-4238-b96b-003e4ad4b186 10010 127.0.0.1 10011 
-Jan 02 23:15:10.750 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-2176fafc-59cf-4238-b96b-003e4ad4b186 
-Jan 02 23:15:10.789 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-2176fafc-59cf-4238-b96b-003e4ad4b186 1 
-Jan 02 23:15:10.828 HYPERVISOR: exec_cmd: nio create_udp udp-ecf05b2d-0108-4961-8689-8caa3ea95db9 10013 127.0.0.1 10012 
-Jan 02 23:15:10.873 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-ecf05b2d-0108-4961-8689-8caa3ea95db9 
-Jan 02 23:15:10.934 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-ecf05b2d-0108-4961-8689-8caa3ea95db9 1 
+Jan 03 11:36:21.996 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 03 11:36:21.997 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33969.
+Jan 03 11:36:22.182 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 03 11:36:22.212 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 03 11:36:22.212 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 03 11:36:22.246 HYPERVISOR: exec_cmd: ethsw create Ethernet Core 
+Jan 03 11:36:24.898 HYPERVISOR: exec_cmd: nio create_udp udp-79eb131c-3e0b-41d8-9af8-9eac66a849c7 10009 127.0.0.1 10008 
+Jan 03 11:36:24.932 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-79eb131c-3e0b-41d8-9af8-9eac66a849c7 
+Jan 03 11:36:24.970 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-79eb131c-3e0b-41d8-9af8-9eac66a849c7 1 
+Jan 03 11:36:25.024 HYPERVISOR: exec_cmd: nio create_udp udp-74f2551d-49a6-4b67-ac8c-2d77dea74b46 10010 127.0.0.1 10011 
+Jan 03 11:36:25.073 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-74f2551d-49a6-4b67-ac8c-2d77dea74b46 
+Jan 03 11:36:25.106 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-74f2551d-49a6-4b67-ac8c-2d77dea74b46 1 
+Jan 03 11:36:25.167 HYPERVISOR: exec_cmd: nio create_udp udp-e0c58472-b0a7-4529-97e3-a24e7e71cf93 10013 127.0.0.1 10012 
+Jan 03 11:36:25.210 HYPERVISOR: exec_cmd: ethsw add_nio Ethernet Core udp-e0c58472-b0a7-4529-97e3-a24e7e71cf93 
+Jan 03 11:36:25.264 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernet Core udp-e0c58472-b0a7-4529-97e3-a24e7e71cf93 1 

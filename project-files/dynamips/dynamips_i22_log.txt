@@ -1,9 +1,9 @@
-Jan 02 23:15:09.051 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 23:15:09.053 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3221.
-Jan 02 23:15:09.279 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 23:15:09.318 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 23:15:09.318 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 23:15:09.434 HYPERVISOR: exec_cmd: ethsw create netC 
-Jan 02 23:15:12.628 HYPERVISOR: exec_cmd: nio create_udp udp-94073726-e296-404f-a46c-0f53b11a9f82 10049 127.0.0.1 10048 
-Jan 02 23:15:12.656 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-94073726-e296-404f-a46c-0f53b11a9f82 
-Jan 02 23:15:12.703 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-94073726-e296-404f-a46c-0f53b11a9f82 1 
+Jan 03 11:36:23.671 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 03 11:36:23.671 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33998.
+Jan 03 11:36:23.857 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 03 11:36:23.909 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 03 11:36:23.910 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 03 11:36:23.970 HYPERVISOR: exec_cmd: ethsw create netC 
+Jan 03 11:36:26.714 HYPERVISOR: exec_cmd: nio create_udp udp-3e90e834-d5a8-4625-bd32-cde23b8442ca 10049 127.0.0.1 10048 
+Jan 03 11:36:26.778 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-3e90e834-d5a8-4625-bd32-cde23b8442ca 
+Jan 03 11:36:26.818 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-3e90e834-d5a8-4625-bd32-cde23b8442ca 1 
