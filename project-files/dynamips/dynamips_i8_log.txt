@@ -1,24 +1,33 @@
-Jan 02 19:16:27.767 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 19:16:27.767 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10226.
-Jan 02 19:16:27.962 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 19:16:28.014 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 19:16:28.014 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 19:16:28.088 HYPERVISOR: exec_cmd: vm create EmpC 26 c3725 
-Jan 02 19:16:28.090 VM: VM EmpC created.
-Jan 02 19:16:28.146 HYPERVISOR: exec_cmd: vm set_con_tcp_port EmpC 5006 
-Jan 02 19:16:28.199 HYPERVISOR: exec_cmd: c3725 get_mac_addr EmpC 
-Jan 02 19:16:28.248 HYPERVISOR: exec_cmd: vm get_status EmpC 
-Jan 02 19:16:28.312 HYPERVISOR: exec_cmd: vm set_idle_pc EmpC 0x60a68e70 
-Jan 02 19:16:28.397 HYPERVISOR: exec_cmd: c3725 set_mac_addr EmpC c21a.0588.0000 
-Jan 02 19:16:28.461 HYPERVISOR: exec_cmd: vm set_exec_area EmpC 64 
-Jan 02 19:16:28.515 HYPERVISOR: exec_cmd: vm set_nvram EmpC 256 
-Jan 02 19:16:28.585 HYPERVISOR: exec_cmd: vm set_disk0 EmpC 0 
-Jan 02 19:16:28.644 HYPERVISOR: exec_cmd: vm set_ios EmpC C:/Users/Pedro Coelho/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.bin 
-Jan 02 19:16:28.703 HYPERVISOR: exec_cmd: vm set_config EmpC configs/i26_startup-config.cfg 
-Jan 02 19:16:32.401 HYPERVISOR: exec_cmd: nio create_udp udp-355a1c9b-6e49-42d6-a911-ea08fbd9c762 10015 127.0.0.1 10014 
-Jan 02 19:16:32.466 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 0 udp-355a1c9b-6e49-42d6-a911-ea08fbd9c762 
-Jan 02 19:16:32.544 HYPERVISOR: exec_cmd: vm get_status EmpC 
-Jan 02 19:16:34.611 HYPERVISOR: exec_cmd: nio create_udp udp-ab129a7a-9a87-4d80-b0bb-ac34d875a909 10048 127.0.0.1 10049 
-Jan 02 19:16:34.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 1 udp-ab129a7a-9a87-4d80-b0bb-ac34d875a909 
-Jan 02 19:16:34.723 HYPERVISOR: exec_cmd: vm get_status EmpC 
-Jan 02 19:16:47.703 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 02 23:15:07.201 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 23:15:07.202 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3193.
+Jan 02 23:15:07.388 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 23:15:07.424 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 23:15:07.424 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 23:15:07.460 HYPERVISOR: exec_cmd: vm create EmpC 26 c3725 
+Jan 02 23:15:07.463 VM: VM EmpC created.
+Jan 02 23:15:07.516 HYPERVISOR: exec_cmd: vm set_con_tcp_port EmpC 5006 
+Jan 02 23:15:07.567 HYPERVISOR: exec_cmd: c3725 get_mac_addr EmpC 
+Jan 02 23:15:07.604 HYPERVISOR: exec_cmd: vm set_nvram EmpC 256 
+Jan 02 23:15:07.633 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 23:15:07.676 HYPERVISOR: exec_cmd: vm set_idle_pc EmpC 0x60a68e70 
+Jan 02 23:15:07.708 HYPERVISOR: exec_cmd: c3725 set_mac_addr EmpC c21a.0588.0000 
+Jan 02 23:15:07.745 HYPERVISOR: exec_cmd: vm set_exec_area EmpC 64 
+Jan 02 23:15:07.776 HYPERVISOR: exec_cmd: vm set_disk0 EmpC 0 
+Jan 02 23:15:07.811 HYPERVISOR: exec_cmd: vm set_ios EmpC C:/Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.bin 
+Jan 02 23:15:07.849 HYPERVISOR: exec_cmd: vm set_config EmpC configs/i26_startup-config.cfg 
+Jan 02 23:15:10.776 HYPERVISOR: exec_cmd: nio create_udp udp-4f0b0c5a-855b-4454-9eb4-b0d7d5a48ea5 10015 127.0.0.1 10014 
+Jan 02 23:15:10.799 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 0 udp-4f0b0c5a-855b-4454-9eb4-b0d7d5a48ea5 
+Jan 02 23:15:10.834 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 23:15:12.501 HYPERVISOR: exec_cmd: nio create_udp udp-7d5bbf8b-5cb6-47b2-b8f0-c81d07cba95e 10048 127.0.0.1 10049 
+Jan 02 23:15:12.581 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EmpC 0 1 udp-7d5bbf8b-5cb6-47b2-b8f0-c81d07cba95e 
+Jan 02 23:15:12.632 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 23:15:19.102 HYPERVISOR: exec_cmd: vm set_ghost_status EmpC 2 
+Jan 02 23:15:19.132 HYPERVISOR: exec_cmd: vm set_ghost_file EmpC c3725-advipservicesk9-mz.124-21.bin-128.ghost 
+Jan 02 23:15:19.149 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 02 23:15:19.164 HYPERVISOR: exec_cmd: vm start EmpC 
+Jan 03 00:09:06.371 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 03 00:12:16.362 HYPERVISOR: exec_cmd: vm get_status EmpC 
+Jan 03 00:12:16.425 HYPERVISOR: exec_cmd: vm stop EmpC 
+Jan 03 00:12:16.544 VM: VM EmpC shutdown.
+Jan 03 00:12:16.578 HYPERVISOR: exec_cmd: vm extract_config EmpC 
+Jan 03 00:12:18.430 HYPERVISOR: exec_cmd: vm extract_config EmpC 

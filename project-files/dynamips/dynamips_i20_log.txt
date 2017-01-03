@@ -1,12 +1,12 @@
-Jan 02 19:16:29.834 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Jan 02 19:16:29.836 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10249.
-Jan 02 19:16:30.106 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 02 19:16:30.182 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips 
-Jan 02 19:16:30.183 GENERAL: working_dir=C:\Users\Pedro Coelho\OneDrive\UA\4ano\ARA\projeto\Advanced-Network-Architecture\project-files\dynamips
-Jan 02 19:16:30.249 HYPERVISOR: exec_cmd: ethsw create netS1 
-Jan 02 19:16:34.444 HYPERVISOR: exec_cmd: nio create_udp udp-7262f7db-6900-423a-8ecc-e75f68d99732 10043 127.0.0.1 10042 
-Jan 02 19:16:34.540 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-7262f7db-6900-423a-8ecc-e75f68d99732 
-Jan 02 19:16:34.620 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-7262f7db-6900-423a-8ecc-e75f68d99732 1 
-Jan 02 19:16:34.696 HYPERVISOR: exec_cmd: nio create_udp udp-497aa5e6-0faf-40c1-93e6-3733dfd2cd93 10044 127.0.0.1 10045 
-Jan 02 19:16:34.762 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-497aa5e6-0faf-40c1-93e6-3733dfd2cd93 
-Jan 02 19:16:34.862 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-497aa5e6-0faf-40c1-93e6-3733dfd2cd93 1 
+Jan 02 23:15:08.914 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jan 02 23:15:08.915 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3218.
+Jan 02 23:15:09.179 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 02 23:15:09.230 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips 
+Jan 02 23:15:09.230 GENERAL: working_dir=C:\Users\Filipe\Desktop\UA\4ano\ara\Advanced-Network-Architecture\project-files\dynamips
+Jan 02 23:15:09.271 HYPERVISOR: exec_cmd: ethsw create netS1 
+Jan 02 23:15:12.372 HYPERVISOR: exec_cmd: nio create_udp udp-9fddc0fe-45e7-4605-9891-a5789248ad74 10043 127.0.0.1 10042 
+Jan 02 23:15:12.431 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-9fddc0fe-45e7-4605-9891-a5789248ad74 
+Jan 02 23:15:12.464 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-9fddc0fe-45e7-4605-9891-a5789248ad74 1 
+Jan 02 23:15:12.575 HYPERVISOR: exec_cmd: nio create_udp udp-627679a0-8216-4b71-858b-531c11fa2bfa 10044 127.0.0.1 10045 
+Jan 02 23:15:12.617 HYPERVISOR: exec_cmd: ethsw add_nio netS1 udp-627679a0-8216-4b71-858b-531c11fa2bfa 
+Jan 02 23:15:12.661 HYPERVISOR: exec_cmd: ethsw set_access_port netS1 udp-627679a0-8216-4b71-858b-531c11fa2bfa 1 

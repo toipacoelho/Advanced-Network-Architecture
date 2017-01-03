@@ -99,6 +99,7 @@ no shut
 ip add 4.20.20.13 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:4::1/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -107,6 +108,7 @@ network 192.172.1.0 0.0.0.63 area 0
 redistribute bgp 9000 subnets
 ipv6 router ospf 1 
 default-information originate always
+router-id 1.1.1.1
 exit
 router bgp 9000
 address-family ipv4 unicast
@@ -164,6 +166,7 @@ no shut
 ip add 192.172.1.129 255.255.255.128
 ipv6 enable
 ipv6 add 2001:200:100:10::1/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -173,6 +176,7 @@ network 192.172.1.68 0.0.0.3 area 0
 redistribute bgp 9000 subnets
 ipv6 router ospf 1
 default-information originate always
+router-id 2.2.2.2
 exit
 router bgp 9000
 address-family ipv4 unicast
@@ -216,16 +220,19 @@ no shut
 ip add 192.172.1.3 255.255.255.192
 ipv6 enable
 ipv6 add 2001:200:100::3/64
+ipv6 ospf 1 area 0
 int f1/0
 no shut
 ip add 192.172.1.73 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:2::1/64
+ipv6 ospf 1 area 0
 int f0/1
 no shut
 ip add 192.172.1.77 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:3::1/64
+ipv6 ospf 1 area 0
 router ospf 1
 default-information originate always
 network 10.0.0.4 0.0.0.0 area 0
@@ -234,6 +241,7 @@ network 192.172.1.72 0.0.0.3 area 0
 network 192.172.1.76 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 3.3.3.3
 exit
 router bgp 9000
 address-family ipv4 unicast
@@ -264,16 +272,19 @@ no shut
 ip add 192.172.1.85 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:5::1/64
+ipv6 ospf 1 area 0
 int f0/1
 no shut
 ip add 192.172.1.81 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:4::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 192.172.1.70 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:1::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -283,6 +294,7 @@ network 192.172.1.80 0.0.0.3 area 0
 network 192.172.1.84 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 4.4.4.4
 exit
 router bgp 9000
 address-family ipv4 unicast
@@ -308,11 +320,13 @@ no shut
 ip add 140.1.1.1 255.255.255.0
 ipv6 enable
 ipv6 add 2001:140:0:1::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 4.20.20.14 255.255.255.252
 ipv6 enable
 ipv6 add 2001:420:0:4::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -320,6 +334,7 @@ network 140.1.1.0 0.0.0.255 area 0
 redistribute bgp 65300 subnets
 ipv6 router ospf 1
 default-information originate always
+router-id 5.5.5.5
 exit
 router bgp 65300
 network 140.1.1.0 mask 255.255.255.0
@@ -344,11 +359,13 @@ no shut
 ip add 120.1.1.1 255.255.255.128
 ipv6 enable
 ipv6 add 2001:120:0:1::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 192.172.1.74 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:2::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -357,6 +374,7 @@ network 120.1.1.0 0.0.0.255 area 0
 network 192.172.1.72 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 6.6.6.6
 exit
 
 
@@ -371,11 +389,13 @@ no shut
 ip add 130.1.1.1 255.255.255.128
 ipv6 enable
 ipv6 add 2001:130:0:1::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 192.172.1.78 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:3::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -384,6 +404,7 @@ network 130.1.1.1 0.0.0.255 area 0
 network 192.172.100.76 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 7.7.7.7
 exit
 
 
@@ -397,11 +418,13 @@ no shut
 ip add 130.1.1.129 255.255.255.128
 ipv6 enable
 ipv6 add 2001:130:0:2::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 192.172.1.86 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:5::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -410,6 +433,7 @@ network 130.1.1.0 0.0.0.255 area 0
 network 192.172.1.84 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 9.9.9.9
 exit
 
 
@@ -424,11 +448,13 @@ no shut
 ip add 120.1.1.129 255.255.255.128
 ipv6 enable
 ipv6 add 2001:120:0:2::1/64
+ipv6 ospf 1 area 0
 int f0/0
 no shut
 ip add 192.172.1.82 255.255.255.252
 ipv6 enable
 ipv6 add 2001:200:100:4::2/64
+ipv6 ospf 1 area 0
 exit
 router ospf 1
 default-information originate always
@@ -437,6 +463,7 @@ network 120.1.1.0 0.0.0.255 area 0
 network 192.172.1.80 0.0.0.3 area 0
 ipv6 router ospf 1
 default-information originate always
+router-id 8.8.8.8
 exit
 
 ---MPLS-TE-Lisboa---
