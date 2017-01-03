@@ -130,8 +130,51 @@ neighbor 2001:200:100::2 next-hop-self
 neighbor 2001:200:100::3 next-hop-self
 redistribute ospf 1
 exit
+ip prefix-list priv4 seq 10 permit 10.0.0.0/8 le 32
+ip prefix-list priv4 seq 12 permit 172.16.0.0/12 le 32
+ip prefix-list priv4 seq 14 permit 192.168.0.0/16 le 32
 ip as-path access-list 1 permit ^$
 ip as-path access-list 2 permit ^65300$
+route-map rm-priv-internal-4 deny 10
+match ip address prefix-list priv4
+route-map rm-priv-internal-4 permit 20
+match as-path 1 2
+exit
+route-map rm-internal-6 permit 10
+match as-path 1 2
+exit
+ip prefix-list internet4 seq 10 permit 0.0.0.0/0 le 32
+ipv6 prefix-list internet6 seq 10 permit ::/0 le 128
+ip prefix-list sip4 seq 10 permit 210.0.1.0/24 le 32
+ipv6 prefix-list sip6 seq 10 permit 2100:210::/48 le 128
+ip as-path access-list 3 permit ^20000$
+
+route-map rm-internet-sip-4 deny 10
+match ip address prefix-list sip4
+route-map rm-internet-sip-4 permit 20
+match as-path 1 2 3
+route-map rm-internet-sip-4 permit 30
+match ip address prefix-list internet4
+set local-preference 200  
+exit
+route-map rm-internet-sip-6 deny 10
+match ipv6 address prefix-list sip6
+route-map rm-internet-sip-6 permit 20
+match as-path 1 2 3
+route-map rm-internet-sip-6 permit 30
+match ipv6 address prefix-list internet6
+set local-preference 200
+exit
+router bgp 9000
+address-family ipv4 unicast
+neighbor 4.20.20.1 route-map rm-priv-internal-4 out
+neighbor 4.20.20.1 route-map rm-internet-sip-4 in
+neighbor 4.20.20.1 remove-private-as
+address-family ipv6 unicast
+neighbor 2001:420:0:0::1 route-map rm-internal-6 out
+neighbor 2001:420:0:0::1 route-map rm-internet-sip-6 in
+neighbor 2001:420:0:0::1 remove-private-as
+exit
 
 ---Lisboa---
 conf t
@@ -205,8 +248,65 @@ neighbor 2001:200:100::3 next-hop-self
 neighbor 2001:200:100:1::2 next-hop-self
 redistribute ospf 1
 exit
+ip prefix-list priv4 seq 10 permit 10.0.0.0/8 le 32
+ip prefix-list priv4 seq 12 permit 172.16.0.0/12 le 32
+ip prefix-list priv4 seq 14 permit 192.168.0.0/16 le 32
 ip as-path access-list 1 permit ^$
 ip as-path access-list 2 permit ^65300$
+ip prefix-list sip4 seq 10 permit 210.0.1.0/24 le 32
+ipv6 prefix-list sip6 seq 10 permit 2100:210::/48 le 128
+ip as-path access-list 3 permit ^20000$
+__________________________
+route-map rm-sip-4 deny 10
+match ip address prefix-list sip4
+route-map rm-sip-4 permit 20
+match as-path 1 2 3 
+exit
+route-map rm-sip-6 deny 10
+match ipv6 address prefix-list sip6
+route-map rm-sip-6 permit 20
+match as-path 1 2 3
+exit
+route-map rm-priv-internal-4 deny 10
+match ip address prefix-list priv4
+route-map rm-priv-internal-4 permit 20
+match as-path 1 2
+exit
+route-map rm-internal-6 permit 10
+match as-path 1 2
+exit
+ip prefix-list internet4 seq 10 permit 0.0.0.0/0 le 32
+ipv6 prefix-list internet6 seq 10 permit ::/0 le 128
+ip as-path access-list 3 permit ^20000$
+route-map rm-internet-4 permit 10
+match as-path 1 2 3
+route-map rm-internet-4 permit 20
+match ip address prefix-list internet4
+set local-preference 200
+exit
+route-map rm-internet-6 permit 10
+match as-path 1 2 3
+route-map rm-internet-6 permit 20
+match ipv6 address prefix-list internet6
+set local-preference 200
+exit
+router bgp 9000
+address-family ipv4 unicast
+neighbor 4.20.20.9 route-map rm-priv-internal-4 out
+neighbor 4.20.20.13 route-map rm-priv-internal-4 out
+neighbor 4.20.20.9 route-map rm-sip4 in
+neighbor 10.0.0.2 route-map rm-internet-4 in
+neighbor 4.20.20.13 remove-private-as
+neighbor 4.20.20.9 remove-private-as
+address-family ipv6 unicast
+neighbor 2001:420:0:2::1 route-map rm-internal-6 out
+neighbor 2001:420:0:3::1 route-map rm-internal-6 out
+neighbor 2001:420:0:2::1 route-map rm-sip6 in
+neighbor 2001:200:100::1 route-map rm-internet-6 in
+neighbor 2001:420:0:2::1 remove-private-as
+neighbor 2001:420:0:3::1 remove-private-as
+exit
+
 
 ---Aveiro---
 conf t
@@ -257,7 +357,39 @@ neighbor 2001:200:100::2 remote-as 9000
 neighbor 2001:192:100::1 next-hop-self
 neighbor 2001:192:100::2 next-hop-self
 exit
-
+ip as-path access-list 1 permit ^$
+ip as-path access-list 2 permit ^65300$
+ip as-path access-list 3 permit ^20000$
+ip as-path access-list 4 permit ^30000$
+ip prefix-list internet4 seq 10 permit 0.0.0.0/0 le 32
+ipv6 prefix-list internet6 seq 10 permit ::/0 le 128
+ip prefix-list l2v4 seq 10 permit 200.200.1.0/24 le 32
+ipv6 prefix-list l2v6 seq 10 permit 2100:200:200::/48 le 128
+____________________________________
+route-map rm-internet-l2-4 permit 10
+match ip address prefix-list l2v4
+set local-preference 200
+route-map rm-internet-l2-4 permit 20
+match as-path 1 2 3 4
+route-map rm-internet-l2-4 permit 30
+match ip address prefix-list internet4
+set local-preference 200
+exit
+route-map rm-internet-l2-6 permit 10
+match ipv6 address prefix-list l2v6
+set local-preference 200
+route-map rm-internet-l2-6 permit 20
+match as-path 1 2 3 4
+route-map rm-internet-l2-6 permit 30
+match ipv6 address prefix-list internet4
+set local-preference 200
+exit
+router bgp 9000
+address-family ipv4 unicast
+neighbor 10.0.0.2 route-map rm-internet-l2-4 in
+address-family ipv6 unicast
+neighbor 2001:200:100::1 route-map rm-internet-l2-6 in
+exit
 
 
 ---Oeiras---
@@ -307,6 +439,25 @@ neighbor 10.0.0.3 update-source Loopback0
 address-family ipv6 unicast
 neighbor 2001:200:100:1::1 remote-as 9000
 neighbor 2001:200:100:1::1 next-hop-self
+exit
+ip prefix-list l2v4 seq 10 permit 200.200.1.0/24 le 32
+ipv6 prefix-list l2v6 seq 10 permit 2100:200:200::/48 le 128
+____________________________________
+route-map rm-l2-4 permit 10
+match ip address prefix-list l2v4
+set local-preference 200
+route-map rm-l2-4 permit 20
+exit
+route-map rm-l2-6 permit 10
+match ipv6 address prefix-list l2v6
+set local-preference 200
+route-map rm-l2-6 permit 20
+exit
+router bgp 9000
+address-family ipv4 unicast
+neighbor 10.0.0.3 route-map rm-l2-4 in
+address-family ipv6 unicast
+neighbor 2001:200:100:1::1 route-map rm-l2-6 in
 exit
 
 
